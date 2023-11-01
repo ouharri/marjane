@@ -9,7 +9,7 @@ import lombok.*;
 import java.util.Objects;
 
 /**
- * This class represents an address of {@link User} entities.
+ * This class represents an address of {@link Person} entities.
  *
  * @author Ouharri Outman
  * @version 1.0

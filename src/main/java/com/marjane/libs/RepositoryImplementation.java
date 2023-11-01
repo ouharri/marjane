@@ -1,9 +1,11 @@
 package com.marjane.libs;
 
+import jakarta.inject.Inject;
 import jakarta.persistence.*;
 import jakarta.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -30,8 +32,8 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
 
     private volatile EntityManager em = null;
 
-    @PersistenceContext
-    private  EntityManagerFactory emf;
+    @Autowired
+    protected volatile EntityManagerFactory emf;
 
 
     /**
@@ -59,10 +61,11 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
      * @return The EntityManager instance.
      */
     protected synchronized EntityManager getEntityManager() {
-        if (emf != null && em != null) {
+        if (emf != null) {
             synchronized (Repository.class) {
                 if (em == null) {
                     try {
+                        System.out.println("\n\n emf is not null");
                         em = emf.createEntityManager();
                     } catch (Exception e) {
                         logger.error("Error while creating entity manager", e);
