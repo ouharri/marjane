@@ -1,6 +1,6 @@
 package com.marjane.exceptions;
 
-import com.marjane.models.Person;
+import com.marjane.models.User;
 import lombok.Getter;
 import org.springframework.validation.BindingResult;
 
@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * This class is used when an attempt of creating an entity is failed.
  *
- * @author Ouharri Outman
+ * @author Maksym Panov
  * @version 1.0
  */
 @Getter
@@ -35,7 +35,7 @@ public class ResourceNotCreatedException extends ResourceException {
     /**
      * This constructor is used when the exceptional situation was <br>
      * caused by uniqueness violation (e.g. there is an attempt of registration of a <br>
-     * {@link Person} with phone number that already exists).
+     * {@link User} with phone number that already exists).
      *
      * @param matches {@link Map} of fields that violate uniqueness constraint
      */

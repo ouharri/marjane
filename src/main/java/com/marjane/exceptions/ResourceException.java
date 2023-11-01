@@ -1,12 +1,12 @@
 package com.marjane.exceptions;
 
-import com.marjane.models.Person;
+import com.marjane.models.User;
 
 
 /**
- * The parent for all exceptions, associated with resources, such as {@link Person} etc.
+ * The parent for all exceptions, associated with resources, such as {@link User} etc.
  *
- * @author Ouharri Outman
+ * @author Maksym Panov
  * @version 1.0
  */
 public class ResourceException extends RuntimeException {

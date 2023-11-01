@@ -18,7 +18,7 @@ import java.util.function.Function;
 /**
  * Utility class that provides methods for building, decomposing and validating JWT tokens.
  *
- * @author Ouharri Outman
+ * @author Maksym Panov
  * @version 1.0
  */
 @Component

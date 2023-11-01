@@ -7,7 +7,7 @@ import lombok.Setter;
 /**
  * This class is used to wrap exception messages into easy to read JSON.
  *
- * @author Ouharri Outman
+ * @author Maksym Panov
  * @version 1.0
  */
 @Getter
