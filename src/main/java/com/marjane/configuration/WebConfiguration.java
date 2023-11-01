@@ -45,14 +45,4 @@ public class WebConfiguration implements WebMvcConfigurer {
                         persistenceUnitInfo.getProperties()
                 );
     }
-
-//    @Bean
-//    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
-//        LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
-//        emf.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
-//        emf.setDataSource(persistenceUnitInfo.getJtaDataSource());
-//        emf.setPersistenceUnitName(persistenceUnitInfo.getPersistenceUnitName());
-//        emf.setJpaProperties(persistenceUnitInfo.getProperties());
-//        return emf;
-//    }
 }
