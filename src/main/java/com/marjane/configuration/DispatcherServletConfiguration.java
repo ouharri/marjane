@@ -6,7 +6,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 /**
  * Class of Dispatcher Servlet configuration.
  *
- * @author Ouharri Outman
+ * @author Maksym Panov
  * @version 1.0
  */
 public class DispatcherServletConfiguration extends AbstractAnnotationConfigDispatcherServletInitializer {

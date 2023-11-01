@@ -1,9 +1,10 @@
 package com.marjane.services;
 
+import com.marjane.libs.RepositoryI;
 import com.marjane.Repositories.UserRepository;
 import com.marjane.exceptions.ResourceNotCreatedException;
 import com.marjane.jwt.JwtService;
-import com.marjane.models.Person;
+import com.marjane.models.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -16,18 +17,20 @@ public class UserService {
     private final JwtService jwtService;
 
     /**
+     * Uses {@link RepositoryI} implementation to register and save new {@link User} in the data storage. <br><br>
+     * Re-throws a {@link ResourceNotCreatedException} if {@link RepositoryI} object throws an exception.
      *
-     * @param user {@link Person} that should be registered
+     * @param user {@link User} that should be registered
      */
-    public void registerUser(Person user) {
+    public void registerUser(User user) {
 //        var matches = thisNaturalIdExists(user);
 //        if (matches.size() != 0)
 //            throw new ResourceNotCreatedException(matches);
 
-        Optional<Person> newUser = Optional.empty();
+        Optional<User> newUser = Optional.empty();
 
         try {
-            newUser = Optional.of(repository.saveAndFlush(user));
+            newUser = repository.create(user);
         } catch(Exception e) {
             e.printStackTrace();
         }

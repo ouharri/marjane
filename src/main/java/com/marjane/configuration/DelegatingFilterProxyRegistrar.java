@@ -7,7 +7,7 @@ import org.springframework.security.web.context.AbstractSecurityWebApplicationIn
  * This class initializes DelegatingFilterProxy that will manage SecurityFilterChain
  * beans in the servlet container's filter chain.
  *
- * @author Ouharri Outman
+ * @author Maksym Panov
  * @version 1.0
  */
 @Configuration
