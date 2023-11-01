@@ -66,20 +66,7 @@ public class PersistenceUnitConfig implements PersistenceUnitInfo {
     @Override
     public List<String> getManagedClassNames() {
         List<String> classNames = new ArrayList<>();
-        classNames.add("org.airafrika.App.Entities.Admin");
-        classNames.add("org.airafrika.App.Entities.Plane");
-        classNames.add("org.airafrika.App.Entities.CompanyAerial");
-        classNames.add("org.airafrika.App.Entities.Airport");
-        classNames.add("org.airafrika.App.Entities.Flight");
-        classNames.add("org.airafrika.App.Entities.FlightSchedule");
-        classNames.add("org.airafrika.App.Entities.Passenger");
-        classNames.add("org.airafrika.App.Entities.Reservation");
-        classNames.add("org.airafrika.App.Entities.Itinerary");
-        classNames.add("org.airafrika.App.Entities.Flightpath");
-        classNames.add("org.airafrika.App.Entities.Plane");
-        classNames.add("org.airafrika.App.Entities.ReservationExtra");
-        classNames.add("org.airafrika.App.Entities.Extra");
-        classNames.add("org.airafrika.App.Entities.Paiement");
+        classNames.add("com.marjane.models.Person");
         return classNames;
     }
 
