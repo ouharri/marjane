@@ -36,23 +36,23 @@ public class WebConfiguration implements WebMvcConfigurer {
     public void addCorsMappings(@NotNull CorsRegistry registry) {
         registry.addMapping("/**").allowedHeaders("*").allowedMethods("*");
     }
-//    @Bean
-//    public EntityManagerFactory entityManagerFactory() {
-//        System.out.println("\n\n\n\nhhhhhhhh\n\n");
-//        return hibernatePersistenceProvider
-//                .createContainerEntityManagerFactory(
-//                        persistenceUnitInfo,
-//                        persistenceUnitInfo.getProperties()
-//                );
-//    }
-
     @Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
-        LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
-        emf.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
-        emf.setDataSource(persistenceUnitInfo.getJtaDataSource());
-        emf.setPersistenceUnitName(persistenceUnitInfo.getPersistenceUnitName());
-        emf.setJpaProperties(persistenceUnitInfo.getProperties());
-        return emf;
+    public EntityManagerFactory entityManagerFactory() {
+        System.out.println("\n\n\n\nhhhhhhhh\n\n");
+        return hibernatePersistenceProvider
+                .createContainerEntityManagerFactory(
+                        persistenceUnitInfo,
+                        persistenceUnitInfo.getProperties()
+                );
     }
+
+//    @Bean
+//    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
+//        LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
+//        emf.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
+//        emf.setDataSource(persistenceUnitInfo.getJtaDataSource());
+//        emf.setPersistenceUnitName(persistenceUnitInfo.getPersistenceUnitName());
+//        emf.setJpaProperties(persistenceUnitInfo.getProperties());
+//        return emf;
+//    }
 }
