@@ -1,13 +1,18 @@
 package com.marjane.libs;
 
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+
+/**
+ * An interface for Data Access Objects (DAOs) that perform CRUD operations on entities of type T.
+ *
+ * @param <T> The type of entity to be managed.
+ */
 
 public interface RepositoryI<T> {
 
