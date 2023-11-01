@@ -14,13 +14,12 @@ import java.lang.reflect.Type;
 import java.util.*;
 
 /**
- * An abstract class that implements the Repository interface. It provides default implementations for
- * CRUD operations on entities of type T.
+ * The Repository class is a generic DAO implementation for CRUD operations on entities.
+ * It provides a set of methods for retrieving, creating, updating, and deleting entities.
+ * It also provides methods for building custom queries using a fluent API.
  *
  * @param <T> The type of entity to be managed.
  */
-@Repository
-@EnableTransactionManagement
 public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Serializable, Closeable {
 
     private final Class<T> _clazz;
@@ -29,8 +28,10 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
     protected volatile Logger logger;
     private volatile String _table;
 
+    private volatile EntityManager em = null;
+
     @PersistenceContext
-    protected EntityManager em;
+    private  EntityManagerFactory emf;
 
 
     /**
@@ -38,6 +39,7 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
      */
     @SuppressWarnings("unchecked")
     public RepositoryImplementation() {
+
         ParameterizedType superClass = (ParameterizedType) getClass().getGenericSuperclass();
         Type type = superClass.getActualTypeArguments()[0];
         _clazz = (Class<T>) type;
@@ -51,6 +53,29 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
     }
 
     /**
+     * Obtains an instance of EntityManager following a singleton pattern.
+     * If the instance doesn't exist yet, it is created and initialized.
+     *
+     * @return The EntityManager instance.
+     */
+    protected synchronized EntityManager getEntityManager() {
+        if (emf != null && em != null) {
+            synchronized (Repository.class) {
+                if (em == null) {
+                    try {
+                        em = emf.createEntityManager();
+                    } catch (Exception e) {
+                        logger.error("Error while creating entity manager", e);
+                    }
+                }
+            }
+        } else {
+            //TODO:add a exception handler for no entity manager factory
+        }
+        return em;
+    }
+
+    /**
      * Retrieve an entity by its ID.
      *
      * @param id The ID of the entity to retrieve.
@@ -58,7 +83,7 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
      */
     @Override
     public Optional<T> get(UUID id) {
-        return Optional.ofNullable(em.find(_clazz, id));
+        return Optional.ofNullable(getEntityManager().find(_clazz, id));
     }
 
     /**
@@ -68,7 +93,7 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
      */
     @Override
     public List<T> getAll() {
-        TypedQuery<T> query = em.createQuery("FROM " + _table, _clazz);
+        TypedQuery<T> query = getEntityManager().createQuery("FROM " + _table, _clazz);
         return query.getResultList();
     }
 
@@ -81,10 +106,10 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
     @Override
     @Transactional
     public Optional<T> create(T entity) {
-        EntityTransaction transaction = em.getTransaction();
+        EntityTransaction transaction = getEntityManager().getTransaction();
         try {
             transaction.begin();
-            em.persist(entity);
+            getEntityManager().persist(entity);
             transaction.commit();
             return Optional.of(entity);
         } catch (Exception e) {
@@ -104,10 +129,10 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
     @Override
     @Transactional
     public Optional<T> update(T entity) {
-        EntityTransaction transaction = em.getTransaction();
+        EntityTransaction transaction = getEntityManager().getTransaction();
         try {
             transaction.begin();
-            T updatedEntity = em.merge(entity);
+            T updatedEntity = getEntityManager().merge(entity);
             transaction.commit();
             return Optional.of(updatedEntity);
         } catch (Exception e) {
@@ -126,10 +151,10 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
      */
     @Override
     public Optional<T> find(Object criteria) {
-        EntityTransaction transaction = em.getTransaction();
+        EntityTransaction transaction = getEntityManager().getTransaction();
         try {
             transaction.begin();
-            T entity = em.find(_clazz, criteria);
+            T entity = getEntityManager().find(_clazz, criteria);
             transaction.commit();
             return Optional.ofNullable(entity);
         } catch (Exception e) {
@@ -295,10 +320,10 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
     public List<T> find() {
         if (_query.isEmpty())
             return new ArrayList<>();
-        EntityTransaction transaction = em.getTransaction();
+        EntityTransaction transaction = getEntityManager().getTransaction();
         try {
             transaction.begin();
-            TypedQuery<T> query = em.createQuery("FROM " + _table + _query, _clazz);
+            TypedQuery<T> query = getEntityManager().createQuery("FROM " + _table + _query, _clazz);
             int queryParamCount = _queryParam.size();
             for (int i = 0; i < queryParamCount; i++)
                 query.setParameter("param" + (i + 1), _queryParam.poll());
@@ -321,10 +346,10 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
     public Optional<T> findOne() {
         if (_query.isEmpty())
             return Optional.empty();
-        EntityTransaction transaction = em.getTransaction();
+        EntityTransaction transaction = getEntityManager().getTransaction();
         try {
             transaction.begin();
-            TypedQuery<T> query = em.createQuery("FROM " + _table + _query, _clazz);
+            TypedQuery<T> query = getEntityManager().createQuery("FROM " + _table + _query, _clazz);
             query.setMaxResults(1);
             int queryParamCount = _queryParam.size();
             for (int i = 0; i < queryParamCount; i++)
@@ -347,10 +372,10 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
     @Override
     public Long count() {
         if (_query.isEmpty()) {
-            TypedQuery<Long> countQuery = em.createQuery("SELECT COUNT(e) FROM " + _table + " e", Long.class);
+            TypedQuery<Long> countQuery = getEntityManager().createQuery("SELECT COUNT(e) FROM " + _table + " e", Long.class);
             return countQuery.getSingleResult();
         } else {
-            TypedQuery<Long> countQuery = em.createQuery("SELECT COUNT(e) FROM " + _table + " e " + _query, Long.class);
+            TypedQuery<Long> countQuery = getEntityManager().createQuery("SELECT COUNT(e) FROM " + _table + " e " + _query, Long.class);
             for (int i = 0; i < _queryParam.size(); i++) {
                 countQuery.setParameter(i + 1, _queryParam.poll());
             }
@@ -368,10 +393,10 @@ public abstract class RepositoryImplementation<T> implements RepositoryI<T>, Ser
     @Override
     @Transactional
     public boolean delete(T entity) {
-        EntityTransaction transaction = em.getTransaction();
+        EntityTransaction transaction = getEntityManager().getTransaction();
         try {
             transaction.begin();
-            em.remove(entity);
+            getEntityManager().remove(entity);
             transaction.commit();
             return true;
         } catch (Exception e) {
