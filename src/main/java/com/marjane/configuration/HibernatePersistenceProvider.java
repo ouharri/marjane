@@ -1,4 +1,4 @@
-package com.marjane.Providers;
+package com.marjane.configuration;
 
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.PersistenceException;

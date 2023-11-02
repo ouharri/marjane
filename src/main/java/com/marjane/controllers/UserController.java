@@ -8,7 +8,7 @@ import com.marjane.dto.RegistrationForm;
 import com.marjane.exceptions.ResourceNotCreatedException;
 import com.marjane.exceptions.ResourceNotFoundException;
 import com.marjane.jwt.JwtService;
-import com.marjane.models.User;
+import com.marjane.models.Person;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -17,10 +17,12 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 ///**
 // * Web controller that handles requests associated with {@link User}. <br>
 // *
-// * @author Maksym Panov
+// * @author Ouharri Outman
 // * @version 1.0
 // * @see UserDTO
 // * @see RegistrationForm
@@ -34,9 +36,10 @@ public class UserController {
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
     private final PasswordEncoder passwordEncoder;
+    private final UserRepository userRepository;
 
     /**
-     * Returns a list of all {@link User} objects. There is <br>
+     * Returns a list of all {@link Person} objects. There is <br>
      * also a possibility of using parameters in the request link <br>
      * to customize the output. <br><br>
      * HTTP method: {@code GET} <br>
@@ -46,7 +49,7 @@ public class UserController {
      *                 {@code quantity} users.
      * @param offset if specified, the method will skip first {@code offset}
      *               users.
-     * @return a list of {@link User} objects.
+     * @return a list of {@link Person} objects.
      */
 //    @GetMapping
 //    public List<UserDTO> userRange(@RequestParam(name = "quantity", required = false) Integer quantity,
@@ -110,36 +113,38 @@ public class UserController {
 //    }
 
     /**
-     * Registers new {@link User} and generates new JWT authentication token for him. <br><br>
+     * Registers new {@link Person} and generates new JWT authentication token for him. <br><br>
      * HTTP method: {@code POST} <br>
      * Endpoint: /users/register <br>
      *
-     * @param registrationForm a data transfer object for registering a {@link User}
+     * @param registrationForm a data transfer object for registering a {@link Person}
      * @param bindingResult a Hibernate Validator object which keeps all
      *                      validation violations.
      * @return JWT for registered user
      */
     @PostMapping("/register")
-    public String registerUser(@Valid @RequestBody RegistrationForm registrationForm,
-                              BindingResult bindingResult) {
-        System.out.println("\n\n\n\n\n\n\n\n\n\n");
-        new UserRepository().getAll().forEach(System.out::println);
-        System.out.println(bindingResult);
-        if (bindingResult.hasErrors())
-            throw new ResourceNotCreatedException(bindingResult);
-
-        User userToCreate = registrationForm.toModel();
-
-
-        userToCreate.setAccess(Access.USER);
-        userToCreate.setHashPassword(passwordEncoder.encode(registrationForm.getPassword()));
-
-        new UserRepository().create(userToCreate);
+    public List<Person> registerUser(
+//            @Valid @RequestBody RegistrationForm registrationForm,
+//                                     BindingResult bindingResult
+    ) {
+//        System.out.println("\n\n\n\n\n\n\n\n\n\n");
+//        userRepository.findAll().forEach(System.out::println);
+//        System.out.println(bindingResult);
+//        if (bindingResult.hasErrors())
+//            throw new ResourceNotCreatedException(bindingResult);
+//
+//        Person userToCreate = registrationForm.toModel();
+//
+//
+//        userToCreate.setAccess(Access.USER);
+//        userToCreate.setHashPassword(passwordEncoder.encode(registrationForm.getPassword()));
+//
+//        userRepository.saveAndFlush(userToCreate);w
 
 //        userService.registerUser(userToCreate);
 //        new AuthEntity(jwtService.createToken(userToCreate), userToCreate.getUserId())
 
-        return "ok";
+        return userRepository.findAll();
     }
 
     /**
@@ -158,7 +163,7 @@ public class UserController {
 
 //        User user = userService.getByNaturalId(loginForm.getEmail(), null, null).get(0);
 
-        User user = new User();
+        Person user = new Person();
 
 
 //        if (user == null)
@@ -175,15 +180,15 @@ public class UserController {
     }
 
     /**
-     * Changes information of {@link User} object with specified ID. <br><br>
+     * Changes information of {@link Person} object with specified ID. <br><br>
      * Http method: {@code PATCH} <br>
      * Endpoint: /users/{userId} <br>
      *
-     * @param userDTO a data transfer object for {@link User}.
+     * @param userDTO a data transfer object for {@link Person}.
      * @param id an identifier of a user which you want to change.
      * @param bindingResult a Hibernate Validator object which keeps all
      *                      validation violations.
-     * @return an identifier of provided {@link User}.
+     * @return an identifier of provided {@link Person}.
      */
 //    @PatchMapping("/{id}")
 //    public AuthEntity changeUser(@Valid @RequestBody UserDTO userDTO,

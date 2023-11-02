@@ -1,6 +1,6 @@
 package com.marjane.dto;
 
-import com.marjane.models.User;
+import com.marjane.models.Person;
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * Data transfer class that is used to transfer data, needed to register new {@link User} entities.
+ * Data transfer class that is used to transfer data, needed to register new {@link Person} entities.
  *
- * @author Maksym Panov
+ * @author Ouharri Outman
  * @version 1.0
  */
 @Getter
@@ -42,13 +42,13 @@ public class RegistrationForm {
     private String password;
 
     /**
-     * Converts current {@link RegistrationForm} object to an instance of {@link User}.
+     * Converts current {@link RegistrationForm} object to an instance of {@link Person}.
      *
-     * @return a {@link User} instance
+     * @return a {@link Person} instance
      */
-    public User toModel() {
-        var u = new User();
-        var pi = new User.PersonalInfo();
+    public Person toModel() {
+        var u = new Person();
+        var pi = new Person.PersonalInfo();
         pi.setFirstname(firstname);
         pi.setLastname(lastname);
         pi.setPhoneNumber(phoneNumber);

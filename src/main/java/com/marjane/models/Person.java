@@ -21,13 +21,13 @@ import java.util.*;
  * @author Ouharri Outman
  * @version 1.0
  */
+@Entity
 @Getter
 @Setter
 @ToString
 @NoArgsConstructor
-@Entity
-@Table(name = "User")
-public class User implements UserDetails {
+@Table(name = "person")
+public class Person implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer userId;
@@ -59,7 +59,7 @@ public class User implements UserDetails {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null) return false;
-        if (!(o instanceof User other)) return false;
+        if (!(o instanceof Person other)) return false;
         return Objects.equals(this.personalInfo, other.personalInfo);
     }
 

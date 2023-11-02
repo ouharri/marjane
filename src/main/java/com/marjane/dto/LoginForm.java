@@ -8,7 +8,7 @@ import lombok.Getter;
 /**
  * DTO object which is used to transfer user credentials during authentication and authorization processes.
  *
- * @author Maksym Panov
+ * @author Ouharri Outman
  * @version 1.0
  */
 @Getter
