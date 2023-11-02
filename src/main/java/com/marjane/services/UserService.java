@@ -17,8 +17,6 @@ public class UserService {
     private final JwtService jwtService;
 
     /**
-     * Uses {@link RepositoryI} implementation to register and save new {@link Person} in the data storage. <br><br>
-     * Re-throws a {@link ResourceNotCreatedException} if {@link RepositoryI} object throws an exception.
      *
      * @param user {@link Person} that should be registered
      */
