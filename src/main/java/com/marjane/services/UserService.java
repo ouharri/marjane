@@ -1,6 +1,5 @@
 package com.marjane.services;
 
-import com.marjane.libs.RepositoryI;
 import com.marjane.Repositories.UserRepository;
 import com.marjane.exceptions.ResourceNotCreatedException;
 import com.marjane.jwt.JwtService;
