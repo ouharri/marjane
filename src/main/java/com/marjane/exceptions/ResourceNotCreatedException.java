@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * This class is used when an attempt of creating an entity is failed.
  *
- * @author Maksym Panov
+ * @author Ouharri Outman
  * @version 1.0
  */
 @Getter

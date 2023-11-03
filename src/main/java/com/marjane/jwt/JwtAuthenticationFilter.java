@@ -23,7 +23,7 @@ import java.io.IOException;
  * credentials inside the token with taken from database via {@link UserDetailsService}
  * implementation.
  *
- * @author Maksym Panov
+ * @author Ouharri Outman
  * @version 1.0
  * @see JwtService
  */

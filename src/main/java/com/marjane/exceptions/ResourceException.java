@@ -6,7 +6,7 @@ import com.marjane.models.Person;
 /**
  * The parent for all exceptions, associated with resources, such as {@link Person} etc.
  *
- * @author Maksym Panov
+ * @author Ouharri Outman
  * @version 1.0
  */
 public class ResourceException extends RuntimeException {

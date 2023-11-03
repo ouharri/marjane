@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * This controller helps client check if its auth token is not expired yet
  *
- * @author Maksym Panov
+ * @author Ouharri Outman
  * @version 1.0
  */
 @RestController

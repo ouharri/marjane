@@ -11,7 +11,7 @@ import lombok.Setter;
 /**
  * Data transfer class that is used to transfer data, needed to register new {@link Person} entities.
  *
- * @author Maksym Panov
+ * @author Ouharri Outman
  * @version 1.0
  */
 @Getter

@@ -7,7 +7,7 @@ import lombok.Getter;
 /**
  * This enumeration represents existing roles of the {@link Person}.
  *
- * @author Maksym Panov
+ * @author Ouharri Outman
  * @version 1.0
  */
 @Getter
@@ -33,7 +33,7 @@ public enum Access {
     /**
      * Converts enumeration objects into strings to save in the data storage.
      *
-     * @author Maksym Panov
+     * @author Ouharri Outman
      * @version 1.0
      */
     public static class AccessConverter implements AttributeConverter<Access, String> {
