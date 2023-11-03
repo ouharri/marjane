@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head><title>HTTP Status 500 – Internal Server Error</title>
+    <style type="text/css">body {
+        font-family: Tahoma, Arial, sans-serif;
+    }
+
+    h1, h2, h3, b {
+        color: white;
+        background-color: #525D76;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
+        color: black;
+    }
+
+    .line {
+        height: 1px;
+        background-color: #525D76;
+        border: none;
+    }</style>
+</head>
+<body><h1>HTTP Status 500 – Internal Server Error</h1>
+<hr class="line"/>
+<p><b>Type</b> Exception Report</p>
+<p><b>Message</b> Servlet.init() for servlet [dispatcher] threw exception</p>
+<p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p>
+<p><b>Exception</b></p>
+<pre>jakarta.servlet.ServletException: Servlet.init() for servlet [dispatcher] threw exception
+	org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	java.base&#47;java.lang.Thread.run(Thread.java:1583)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>org.springframework.beans.factory.BeanCreationException: Error creating bean with name &#39;entityManagerFactory&#39; defined in com.marjane.configuration.WebConfiguration: Failed to instantiate [jakarta.persistence.EntityManagerFactory]: Factory method &#39;entityManagerFactory&#39; threw exception with message: Could not initialize class com.marjane.Core.environment
+	org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659)
+	org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:493)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:706)
+	org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:583)
+	org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:537)
+	org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:169)
+	jakarta.servlet.GenericServlet.init(GenericServlet.java:143)
+	jakarta.servlet.http.HttpServlet.init(HttpServlet.java:121)
+	org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	java.base&#47;java.lang.Thread.run(Thread.java:1583)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>org.springframework.beans.BeanInstantiationException: Failed to instantiate [jakarta.persistence.EntityManagerFactory]: Factory method &#39;entityManagerFactory&#39; threw exception with message: Could not initialize class com.marjane.Core.environment
+	org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:493)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:706)
+	org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:583)
+	org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:537)
+	org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:169)
+	jakarta.servlet.GenericServlet.init(GenericServlet.java:143)
+	jakarta.servlet.http.HttpServlet.init(HttpServlet.java:121)
+	org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	java.base&#47;java.lang.Thread.run(Thread.java:1583)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>java.lang.NoClassDefFoundError: Could not initialize class com.marjane.Core.environment
+	com.marjane.configuration.PersistenceUnitConfig.getProperties(PersistenceUnitConfig.java:103)
+	com.marjane.configuration.WebConfiguration.entityManagerFactory(WebConfiguration.java:43)
+	com.marjane.configuration.WebConfiguration$$SpringCGLIB$$0.CGLIB$entityManagerFactory$1(&lt;generated&gt;)
+	com.marjane.configuration.WebConfiguration$$SpringCGLIB$$2.invoke(&lt;generated&gt;)
+	org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	com.marjane.configuration.WebConfiguration$$SpringCGLIB$$0.entityManagerFactory(&lt;generated&gt;)
+	java.base&#47;jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	java.base&#47;java.lang.reflect.Method.invoke(Method.java:580)
+	org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:493)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:706)
+	org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:583)
+	org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:537)
+	org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:169)
+	jakarta.servlet.GenericServlet.init(GenericServlet.java:143)
+	jakarta.servlet.http.HttpServlet.init(HttpServlet.java:121)
+	org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	java.base&#47;java.lang.Thread.run(Thread.java:1583)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException: Error while loading the .env file [in thread &quot;RMI TCP Connection(6)-127.0.0.1&quot;]
+	com.marjane.Core.environment.&lt;clinit&gt;(environment.java:39)
+	com.marjane.configuration.PersistenceUnitConfig.getProperties(PersistenceUnitConfig.java:103)
+	com.marjane.configuration.WebConfiguration.entityManagerFactory(WebConfiguration.java:43)
+	com.marjane.configuration.WebConfiguration$$SpringCGLIB$$0.CGLIB$entityManagerFactory$1(&lt;generated&gt;)
+	com.marjane.configuration.WebConfiguration$$SpringCGLIB$$2.invoke(&lt;generated&gt;)
+	org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	com.marjane.configuration.WebConfiguration$$SpringCGLIB$$0.entityManagerFactory(&lt;generated&gt;)
+	java.base&#47;jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	java.base&#47;java.lang.reflect.Method.invoke(Method.java:580)
+	org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:493)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:706)
+	org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:583)
+	org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:537)
+	org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:169)
+	jakarta.servlet.GenericServlet.init(GenericServlet.java:143)
+	jakarta.servlet.http.HttpServlet.init(HttpServlet.java:121)
+	org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1824)
+	java.base&#47;jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	java.base&#47;java.lang.reflect.Method.invoke(Method.java:580)
+	org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:294)
+	java.management&#47;com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	java.management&#47;com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:422)
+	org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:376)
+	java.base&#47;jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	java.base&#47;java.lang.reflect.Method.invoke(Method.java:580)
+	org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:294)
+	java.management&#47;com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	java.management&#47;com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	java.management&#47;com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:472)
+	java.management.rmi&#47;javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	java.management.rmi&#47;javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	java.base&#47;java.security.AccessController.doPrivileged(AccessController.java:714)
+	java.management.rmi&#47;javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1412)
+	java.management.rmi&#47;javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	java.base&#47;jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	java.base&#47;java.lang.reflect.Method.invoke(Method.java:580)
+	java.rmi&#47;sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	java.rmi&#47;sun.rmi.transport.Transport$1.run(Transport.java:200)
+	java.rmi&#47;sun.rmi.transport.Transport$1.run(Transport.java:197)
+	java.base&#47;java.security.AccessController.doPrivileged(AccessController.java:714)
+	java.rmi&#47;sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	java.rmi&#47;sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	java.rmi&#47;sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	java.rmi&#47;sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	java.base&#47;java.security.AccessController.doPrivileged(AccessController.java:400)
+	java.rmi&#47;sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	java.base&#47;java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	java.base&#47;java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	java.base&#47;java.lang.Thread.run(Thread.java:1583)
+</pre>
+<p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p>
+<hr class="line"/>
+<h3>Apache Tomcat/10.1.14</h3></body>
+</html>
