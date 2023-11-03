@@ -10,7 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="STRUCTURE DE MERDA">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_3_2023_10_05_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_3_2023_10_05_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_3_2023_10_07_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_3_2023_10_07_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_3_2023_9_33_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_3_2023_9_33_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/Providers/HibernatePersistenceProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/Repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/Repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/PersistenceUnitConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/libs/RepositoryI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/libs/RepositoryImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Marjane.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Marjane.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Marjane/WEB-INF/classes/com/marjane/configuration/PersistenceJPAConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Marjane/WEB-INF/classes/com/marjane/configuration/PersistenceJPAConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Marjane/WEB-INF/classes/com/marjane/configuration/WebConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Marjane/WEB-INF/classes/com/marjane/configuration/WebConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Marjane/WEB-INF/classes/com/marjane/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Marjane/WEB-INF/classes/com/marjane/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Marjane/WEB-INF/classes/com/marjane/models/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Marjane/WEB-INF/classes/com/marjane/models/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/marjane/configuration/PersistenceJPAConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/marjane/configuration/PersistenceJPAConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/marjane/configuration/WebConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/marjane/configuration/WebConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/marjane/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/marjane/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/marjane/models/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/marjane/models/Person.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,9 +118,9 @@
     "V_FMT": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/proj/Jorm",
+    "last_opened_file_path": "C:/proj/marjane",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -316,37 +336,6 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="aws.lambda" factoryName="Local">
-      <option name="credentialProviderId" />
-      <option name="regionId" />
-      <option name="debugHost" value="localhost" />
-      <option name="architecture" />
-      <option name="environmentVariables">
-        <map />
-      </option>
-      <option name="handler" />
-      <option name="image" value="false" />
-      <option name="logicalFunctionName" />
-      <option name="memorySize" value="128" />
-      <option name="pathMappings">
-        <list />
-      </option>
-      <option name="platform" />
-      <option name="runtime" />
-      <option name="templateFile" />
-      <option name="timeout" value="300" />
-      <option name="useTemplate" value="false" />
-      <option name="input" />
-      <option name="inputIsFile" value="false" />
-      <sam>
-        <option name="additionalBuildArgs" />
-        <option name="additionalLocalArgs" />
-        <option name="buildInContainer" value="false" />
-        <option name="dockerNetwork" />
-        <option name="skipImagePull" value="false" />
-      </sam>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="HTTP Request.generated-requests | #6" />
@@ -379,6 +368,10 @@
       <workItem from="1698859554589" duration="28591000" />
       <workItem from="1699000185980" duration="169000" />
       <workItem from="1699000391904" duration="2422000" />
+      <workItem from="1699004852386" duration="143000" />
+      <workItem from="1699005017150" duration="891000" />
+      <workItem from="1699006225068" duration="375000" />
+      <workItem from="1699006621375" duration="685000" />
     </task>
     <task id="LOCAL-00001" summary="STRUCTURE DE MERDA">
       <option name="closed" value="true" />
@@ -444,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698966998220</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="STRUCTURE DE MERDA">
+      <option name="closed" value="true" />
+      <created>1699006841296</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699006841296</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

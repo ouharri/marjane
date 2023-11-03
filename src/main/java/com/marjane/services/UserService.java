@@ -1,6 +1,5 @@
 package com.marjane.services;
 
-import com.marjane.libs.RepositoryI;
 import com.marjane.Repositories.UserRepository;
 import com.marjane.exceptions.ResourceNotCreatedException;
 import com.marjane.jwt.JwtService;
@@ -17,8 +16,6 @@ public class UserService {
     private final JwtService jwtService;
 
     /**
-     * Uses {@link RepositoryI} implementation to register and save new {@link Person} in the data storage. <br><br>
-     * Re-throws a {@link ResourceNotCreatedException} if {@link RepositoryI} object throws an exception.
      *
      * @param user {@link Person} that should be registered
      */
@@ -30,7 +27,7 @@ public class UserService {
         Optional<Person> newUser = Optional.empty();
 
         try {
-            newUser = repository.create(user);
+            newUser = Optional.of(repository.saveAndFlush(user));
         } catch(Exception e) {
             e.printStackTrace();
         }

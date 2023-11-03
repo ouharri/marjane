@@ -122,21 +122,23 @@ public class UserController {
      * @return JWT for registered user
      */
     @PostMapping("/register")
-    public String registerUser(@Valid @RequestBody RegistrationForm registrationForm,
-                              BindingResult bindingResult) {
-        System.out.println("\n\n\n\n\n\n\n\n\n\n");
-        userRepository.getAll().forEach(System.out::println);
-        System.out.println(bindingResult);
-        if (bindingResult.hasErrors())
-            throw new ResourceNotCreatedException(bindingResult);
-
-        Person userToCreate = registrationForm.toModel();
-
-
-        userToCreate.setAccess(Access.USER);
-        userToCreate.setHashPassword(passwordEncoder.encode(registrationForm.getPassword()));
-
-        userRepository.create(userToCreate);
+    public String registerUser(
+//            @Valid @RequestBody RegistrationForm registrationForm,
+//                              BindingResult bindingResult
+    ) {
+//        System.out.println("\n\n\n\n\n\n\n\n\n\n");
+//        userRepository.findAll().forEach(System.out::println);
+//        System.out.println(bindingResult);
+//        if (bindingResult.hasErrors())
+//            throw new ResourceNotCreatedException(bindingResult);
+//
+//        Person userToCreate = registrationForm.toModel();
+//
+//
+//        userToCreate.setAccess(Access.USER);
+//        userToCreate.setHashPassword(passwordEncoder.encode(registrationForm.getPassword()));
+//
+//        userRepository.saveAndFlush(userToCreate);
 
 //        userService.registerUser(userToCreate);
 //        new AuthEntity(jwtService.createToken(userToCreate), userToCreate.getUserId())
