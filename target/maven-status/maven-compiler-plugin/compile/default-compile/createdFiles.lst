@@ -8,7 +8,6 @@ com\marjane\dto\AuthEntity.class
 com\marjane\Enums\Access$AccessConverter.class
 com\marjane\configuration\PersistenceJPAConfig.class
 com\marjane\Repositories\UserRepository.class
-com\marjane\common\ExceptionBody.class
 com\marjane\controllers\PingController.class
 com\marjane\exceptions\ResourceNotFoundException.class
 com\marjane\services\UserService.class

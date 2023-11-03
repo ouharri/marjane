@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 /**
  * Spring MVC and JPA/Hibernate configuration class.
  *
- * @author Maksym Panov
+ * @author Ouharri Outman
  * @version 2.0
  */
 @Configuration

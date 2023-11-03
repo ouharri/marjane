@@ -1,9 +1,20 @@
 services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: marjane
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+    depends_on:
+      - postgres
   postgres:
-    image: 'postgres:latest'
+    image: postgres:latest
     environment:
       - 'POSTGRES_DB=marjane'
-      - 'POSTGRES_PASSWORD=secret'
+      - 'POSTGRES_PASSWORD=Youcode@2023'
       - 'POSTGRES_USER=postgres'
     ports:
       - '5432'

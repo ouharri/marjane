@@ -10,9 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="STRUCTURE DE MERDA">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/common/ExceptionBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Marjane.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Marjane.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Marjane/WEB-INF/classes/com/marjane/common/ExceptionBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/marjane/common/ExceptionBody.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +37,6 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
@@ -65,17 +70,6 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <hideBySeverity>
-      <option value="11" />
-      <option value="12" />
-      <option value="13" />
-      <option value="14" />
-      <option value="15" />
-      <option value="16" />
-      <option value="100" />
-      <option value="200" />
-      <option value="300" />
-    </hideBySeverity>
     <option name="selectedTabId" value="CurrentFile" />
     <option name="showPreview" value="true" />
     <option name="sortBySeverity" value="false" />
@@ -314,6 +308,7 @@
       <workItem from="1699005017150" duration="891000" />
       <workItem from="1699006225068" duration="375000" />
       <workItem from="1699006621375" duration="2384000" />
+      <workItem from="1699009282085" duration="2696000" />
     </task>
     <task id="LOCAL-00001" summary="STRUCTURE DE MERDA">
       <option name="closed" value="true" />
@@ -403,7 +398,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699009057181</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="STRUCTURE DE MERDA">
+      <option name="closed" value="true" />
+      <created>1699009496685</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699009496685</updated>
+    </task>
+    <task id="LOCAL-00013" summary="STRUCTURE DE MERDA">
+      <option name="closed" value="true" />
+      <created>1699009528873</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699009528873</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

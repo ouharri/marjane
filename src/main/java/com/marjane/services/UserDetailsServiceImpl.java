@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * user data by its phone number (username) from a database and wraps it
  * in the {@link UserDetails} object.
  *
- * @author Maksym Panov
+ * @author Ouharri Outman
  * @version 1.0
  */
 @Component
