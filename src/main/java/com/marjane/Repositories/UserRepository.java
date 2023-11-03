@@ -1,9 +1,9 @@
 package com.marjane.Repositories;
 
+import com.marjane.libs.RepositoryImplementation;
 import com.marjane.models.Person;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends JpaRepository<Person,Integer> {
+public class UserRepository extends RepositoryImplementation<Person> {
 }

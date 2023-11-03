@@ -6,7 +6,7 @@ com\marjane\jwt\JwtService.class
 com\marjane\services\UserDetailsServiceImpl.class
 com\marjane\dto\AuthEntity.class
 com\marjane\Enums\Access$AccessConverter.class
-com\marjane\configuration\HibernatePersistenceProvider.class
+com\marjane\configuration\PersistenceJPAConfig.class
 com\marjane\Repositories\UserRepository.class
 com\marjane\common\ExceptionBody.class
 com\marjane\controllers\PingController.class
@@ -20,10 +20,8 @@ com\marjane\Enums\Access.class
 com\marjane\models\Person.class
 com\marjane\dto\LoginForm.class
 com\marjane\configuration\DispatcherServletConfiguration.class
-com\marjane\configuration\PersistenceUnitConfig.class
 com\marjane\Core\environment.class
 com\marjane\jwt\JwtAuthenticationFilter.class
-com\marjane\configuration\HibernatePersistenceProvider$1.class
 com\marjane\models\Address$AddressBuilder.class
 com\marjane\controllers\UserController.class
 com\marjane\configuration\AppContext.class

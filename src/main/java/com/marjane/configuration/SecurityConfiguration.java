@@ -16,7 +16,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
  * Application security configuration class.
  * Spring Security is enabled via @EnableWebSecurity
  *
- * @author Ouharri Outman
+ * @author Maksym Panov
  * @version 2.0
  * @see JwtAuthenticationFilter
  */

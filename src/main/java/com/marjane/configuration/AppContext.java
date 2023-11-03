@@ -14,7 +14,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 /**
  * Provides beans for application context and seeds the database
  *
- * @author Ouharri Outman
+ * @author Maksym Panov
  * @version 1.0
  */
 @Configuration

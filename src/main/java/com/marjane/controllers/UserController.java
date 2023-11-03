@@ -17,12 +17,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 ///**
 // * Web controller that handles requests associated with {@link User}. <br>
 // *
-// * @author Ouharri Outman
+// * @author Maksym Panov
 // * @version 1.0
 // * @see UserDTO
 // * @see RegistrationForm
@@ -36,7 +34,8 @@ public class UserController {
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
     private final PasswordEncoder passwordEncoder;
-    private final UserRepository userRepository;
+
+    public final UserRepository userRepository;
 
     /**
      * Returns a list of all {@link Person} objects. There is <br>
@@ -123,28 +122,26 @@ public class UserController {
      * @return JWT for registered user
      */
     @PostMapping("/register")
-    public List<Person> registerUser(
-//            @Valid @RequestBody RegistrationForm registrationForm,
-//                                     BindingResult bindingResult
-    ) {
-//        System.out.println("\n\n\n\n\n\n\n\n\n\n");
-//        userRepository.findAll().forEach(System.out::println);
-//        System.out.println(bindingResult);
-//        if (bindingResult.hasErrors())
-//            throw new ResourceNotCreatedException(bindingResult);
-//
-//        Person userToCreate = registrationForm.toModel();
-//
-//
-//        userToCreate.setAccess(Access.USER);
-//        userToCreate.setHashPassword(passwordEncoder.encode(registrationForm.getPassword()));
-//
-//        userRepository.saveAndFlush(userToCreate);w
+    public String registerUser(@Valid @RequestBody RegistrationForm registrationForm,
+                              BindingResult bindingResult) {
+        System.out.println("\n\n\n\n\n\n\n\n\n\n");
+        userRepository.getAll().forEach(System.out::println);
+        System.out.println(bindingResult);
+        if (bindingResult.hasErrors())
+            throw new ResourceNotCreatedException(bindingResult);
+
+        Person userToCreate = registrationForm.toModel();
+
+
+        userToCreate.setAccess(Access.USER);
+        userToCreate.setHashPassword(passwordEncoder.encode(registrationForm.getPassword()));
+
+        userRepository.create(userToCreate);
 
 //        userService.registerUser(userToCreate);
 //        new AuthEntity(jwtService.createToken(userToCreate), userToCreate.getUserId())
 
-        return userRepository.findAll();
+        return "ok";
     }
 
     /**
