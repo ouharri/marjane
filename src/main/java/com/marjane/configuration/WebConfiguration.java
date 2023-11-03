@@ -20,10 +20,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 @EnableWebMvc
 @RequiredArgsConstructor
-@EnableTransactionManagement
 @PropertySource("classpath:/app.properties")
 @ComponentScan(basePackages = {"com.marjane"})
-@EnableJpaRepositories(basePackages = "com.marjane.Repositories")
 public class WebConfiguration implements WebMvcConfigurer {
 
     /**
