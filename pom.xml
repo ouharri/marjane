@@ -86,7 +86,7 @@
             <version>6.0.2</version>
         </dependency>
 
-<!--         https://mvnrepository.com/artifact/org.springframework.security/spring-security-config-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
@@ -100,28 +100,6 @@
             <version>6.0.2</version>
         </dependency>
 
-        <!--java persistence API 2.1 -->
-<!--        <dependency>-->
-<!--            <groupId>org.hibernate.javax.persistence</groupId>-->
-<!--            <artifactId>hibernate-jpa-2.1-api</artifactId>-->
-<!--            <version>1.0.0.Final</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.hibernate.orm</groupId>-->
-<!--            <artifactId>hibernate-entitymanager</artifactId>-->
-<!--            <version>6.0.0.Alpha7</version>-->
-<!--            <exclusions>-->
-<!--                <exclusion>-->
-<!--                    <groupId>cglib</groupId>-->
-<!--                    <artifactId>cglib</artifactId>-->
-<!--                </exclusion>-->
-<!--                <exclusion>-->
-<!--                    <groupId>dom4j</groupId>-->
-<!--                    <artifactId>dom4j</artifactId>-->
-<!--                </exclusion>-->
-<!--            </exclusions>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
@@ -129,7 +107,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!--        https://mvnrepository.com/artifact/jakarta.enterprise/jakarta.enterprise.cdi-api-->
+        <!-- https://mvnrepository.com/artifact/jakarta.enterprise/jakarta.enterprise.cdi-api -->
         <dependency>
             <groupId>jakarta.enterprise</groupId>
             <artifactId>jakarta.enterprise.cdi-api</artifactId>
@@ -143,19 +121,6 @@
             <version>6.0.9</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-commons -->
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-commons</artifactId>
-            <version>3.0.2</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-jpa</artifactId>
-            <version>3.0.2</version>
-        </dependency>
 
         <dependency>
             <groupId>jakarta.persistence</groupId>
@@ -179,7 +144,7 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.5.4</version>
+            <version>42.6.0</version>
         </dependency>
 
         <dependency>
@@ -187,6 +152,14 @@
             <artifactId>hibernate-core</artifactId>
             <version>6.3.1.Final</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.3.1.Final</version>
+            <type>pom</type>
+        </dependency>
+
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -259,13 +232,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>6.3.1.Final</version>
-            <type>pom</type>
-        </dependency>
-
-        <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.11.0</version>
@@ -295,7 +261,7 @@
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-reload4j</artifactId>
+            <artifactId>slf4j-log4j12</artifactId>
             <version>2.0.9</version>
         </dependency>
         <dependency>

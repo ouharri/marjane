@@ -1,0 +1,17 @@
+Index: src/main/java/com/marjane/Repositories/UserRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.marjane.Repositories;\r\n\r\nimport com.marjane.models.Person;\r\nimport org.springframework.data.jpa.repository.JpaRepository;\r\nimport org.springframework.stereotype.Repository;\r\n\r\n@Repository\r\npublic interface UserRepository extends JpaRepository<Person,Integer> {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/marjane/Repositories/UserRepository.java b/src/main/java/com/marjane/Repositories/UserRepository.java
+--- a/src/main/java/com/marjane/Repositories/UserRepository.java	(revision 693d9fee2de6e4c929109e72b9ef3025a90ee80d)
++++ b/src/main/java/com/marjane/Repositories/UserRepository.java	(date 1699002271904)
+@@ -6,4 +6,4 @@
+ 
+ @Repository
+ public interface UserRepository extends JpaRepository<Person,Integer> {
+-}
++}
+\ No newline at end of file
