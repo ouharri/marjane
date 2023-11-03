@@ -17,10 +17,12 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 ///**
 // * Web controller that handles requests associated with {@link User}. <br>
 // *
-// * @author Maksym Panov
+// * @author Ouharri Outman
 // * @version 1.0
 // * @see UserDTO
 // * @see RegistrationForm
@@ -30,12 +32,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/v2/users")
 @RequiredArgsConstructor
 public class UserController {
-//    private final UserService userService;
+    //    private final UserService userService;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
     private final PasswordEncoder passwordEncoder;
-
-    public final UserRepository userRepository;
+    private final UserRepository userRepository;
 
     /**
      * Returns a list of all {@link Person} objects. There is <br>
@@ -122,9 +123,9 @@ public class UserController {
      * @return JWT for registered user
      */
     @PostMapping("/register")
-    public String registerUser(
+    public List<Person> registerUser(
 //            @Valid @RequestBody RegistrationForm registrationForm,
-//                              BindingResult bindingResult
+//                                     BindingResult bindingResult
     ) {
 //        System.out.println("\n\n\n\n\n\n\n\n\n\n");
 //        userRepository.findAll().forEach(System.out::println);
@@ -138,12 +139,12 @@ public class UserController {
 //        userToCreate.setAccess(Access.USER);
 //        userToCreate.setHashPassword(passwordEncoder.encode(registrationForm.getPassword()));
 //
-//        userRepository.saveAndFlush(userToCreate);
+//        userRepository.saveAndFlush(userToCreate);w
 
 //        userService.registerUser(userToCreate);
 //        new AuthEntity(jwtService.createToken(userToCreate), userToCreate.getUserId())
 
-        return "ok";
+        return userRepository.findAll();
     }
 
     /**
