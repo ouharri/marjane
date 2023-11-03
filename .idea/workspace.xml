@@ -10,15 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="STRUCTURE DE MERDA">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_3_2023_10_05_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_3_2023_10_05_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_3_2023_10_07_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_3_2023_10_07_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_3_2023_9_33_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_3_2023_9_33_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/DBInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Marjane.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Marjane.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Marjane/WEB-INF/classes/com/marjane/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Marjane/WEB-INF/classes/com/marjane/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/marjane/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/marjane/controllers/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +42,7 @@
     <setting file="jar://$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0-sources.jar!/jakarta/persistence/PersistenceContext.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.0.9/spring-beans-6.0.9.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/6.0.9/spring-orm-6.0.9.jar!/org/springframework/orm/jpa/vendor/HibernateJpaVendorAdapter.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/.env" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -82,6 +77,8 @@
       <option value="300" />
     </hideBySeverity>
     <option name="selectedTabId" value="CurrentFile" />
+    <option name="showPreview" value="true" />
+    <option name="sortBySeverity" value="false" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -98,35 +95,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "V_FMT": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/proj/marjane",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;V_FMT&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/proj/marjane/.env&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\proj\Marjane\src\main\resources" />
@@ -196,13 +193,14 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
+        <option name="IS_ENABLED" value="true" />
+        <option name="IS_SUBST" value="true" />
         <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
         <option name="IS_IGNORE_MISSING_FILES" value="false" />
         <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
         <ENTRIES>
           <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+          <ENTRY IS_ENABLED="true" PARSER="env" IS_EXECUTABLE="false" PATH=".env" />
         </ENTRIES>
       </extension>
       <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
@@ -272,46 +270,6 @@
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
-        <EnvironmentVariables>
-          <option name="NAME" value="CURRENT_SESSION_CONTEXT_CLASS" />
-          <option name="VALUE" value="thread" />
-          <option name="IS_PREDEFINED" value="false" />
-        </EnvironmentVariables>
-        <EnvironmentVariables>
-          <option name="NAME" value="DB_PASSWORD" />
-          <option name="VALUE" value="Youcode@2023" />
-          <option name="IS_PREDEFINED" value="false" />
-        </EnvironmentVariables>
-        <EnvironmentVariables>
-          <option name="NAME" value="DB_USERNAME" />
-          <option name="VALUE" value="postgres" />
-          <option name="IS_PREDEFINED" value="false" />
-        </EnvironmentVariables>
-        <EnvironmentVariables>
-          <option name="NAME" value="HBM2DDL_AUTO" />
-          <option name="VALUE" value="update" />
-          <option name="IS_PREDEFINED" value="false" />
-        </EnvironmentVariables>
-        <EnvironmentVariables>
-          <option name="NAME" value="HIBERNATE_SHOW_SQL" />
-          <option name="VALUE" value="true" />
-          <option name="IS_PREDEFINED" value="false" />
-        </EnvironmentVariables>
-        <EnvironmentVariables>
-          <option name="NAME" value="JDBC_DRIVER" />
-          <option name="VALUE" value="org.postgresql.Driver" />
-          <option name="IS_PREDEFINED" value="false" />
-        </EnvironmentVariables>
-        <EnvironmentVariables>
-          <option name="NAME" value="JPA_DIALECT" />
-          <option name="VALUE" value="org.hibernate.dialect.PostgreSQLDialect" />
-          <option name="IS_PREDEFINED" value="false" />
-        </EnvironmentVariables>
-        <EnvironmentVariables>
-          <option name="NAME" value="PERSISTENCE_UNIT_TRANSACTION_TYPE" />
-          <option name="VALUE" value="RESOURCE_LOCAL" />
-          <option name="IS_PREDEFINED" value="false" />
-        </EnvironmentVariables>
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -355,7 +313,7 @@
       <workItem from="1699004852386" duration="143000" />
       <workItem from="1699005017150" duration="891000" />
       <workItem from="1699006225068" duration="375000" />
-      <workItem from="1699006621375" duration="1923000" />
+      <workItem from="1699006621375" duration="2384000" />
     </task>
     <task id="LOCAL-00001" summary="STRUCTURE DE MERDA">
       <option name="closed" value="true" />
@@ -437,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699007441604</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="STRUCTURE DE MERDA">
+      <option name="closed" value="true" />
+      <created>1699009057181</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699009057181</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
