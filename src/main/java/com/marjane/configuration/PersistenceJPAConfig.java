@@ -1,5 +1,6 @@
 package com.marjane.configuration;
 
+import com.marjane.Core.dotenv;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
@@ -32,12 +33,14 @@ public class PersistenceJPAConfig {
     }
 
     @Bean
-    public DataSource dataSource(){
+    public DataSource dataSource() {
+        System.out.println(dotenv.get("DB_URL"));
+        System.out.println(dotenv.get("DB_USERNAME"));
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(System.getenv("JDBC_DRIVER"));
-        dataSource.setUrl(System.getenv("DB_URL"));
-        dataSource.setUsername(System.getenv("DB_USERNAME"));
-        dataSource.setPassword(System.getenv("DB_PASSWORD"));
+        dataSource.setDriverClassName(dotenv.get("JDBC_DRIVER"));
+        dataSource.setUrl(dotenv.get("DB_URL"));
+        dataSource.setUsername(dotenv.get("DB_USERNAME"));
+        dataSource.setPassword(dotenv.get("DB_PASSWORD"));
         return dataSource;
     }
 
@@ -45,25 +48,24 @@ public class PersistenceJPAConfig {
     public PlatformTransactionManager transactionManager() {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
         transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());
-
         return transactionManager;
     }
 
     @Bean
-    public PersistenceExceptionTranslationPostProcessor exceptionTranslation(){
+    public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
         return new PersistenceExceptionTranslationPostProcessor();
     }
 
     Properties additionalProperties() {
         Properties properties = new Properties();
-        properties.setProperty("hibernate.connection.url", System.getenv("DB_URL"));
-        properties.setProperty("hibernate.connection.username", System.getenv("DB_USERNAME"));
-        properties.setProperty("hibernate.connection.password", System.getenv("DB_PASSWORD"));
-        properties.setProperty("hibernate.connection.driver_class", System.getenv("JDBC_DRIVER"));
-        properties.setProperty("hibernate.dialect", System.getenv("JPA_DIALECT"));
-        properties.setProperty("hibernate.show_sql", System.getenv("HIBERNATE_SHOW_SQL"));
-        properties.setProperty("hibernate.current_session_context_class", System.getenv("CURRENT_SESSION_CONTEXT_CLASS"));
-        properties.setProperty("hibernate.hbm2ddl.auto", System.getenv("HBM2DDL_AUTO"));
+        properties.setProperty("hibernate.connection.url", dotenv.get("DB_URL"));
+        properties.setProperty("hibernate.connection.username", dotenv.get("DB_USERNAME"));
+        properties.setProperty("hibernate.connection.password", dotenv.get("DB_PASSWORD"));
+        properties.setProperty("hibernate.connection.driver_class", dotenv.get("JDBC_DRIVER"));
+        properties.setProperty("hibernate.dialect", dotenv.get("JPA_DIALECT"));
+        properties.setProperty("hibernate.show_sql", dotenv.get("HIBERNATE_SHOW_SQL"));
+        properties.setProperty("hibernate.current_session_context_class", dotenv.get("CURRENT_SESSION_CONTEXT_CLASS"));
+        properties.setProperty("hibernate.hbm2ddl.auto", dotenv.get("HBM2DDL_AUTO"));
         return properties;
     }
 
