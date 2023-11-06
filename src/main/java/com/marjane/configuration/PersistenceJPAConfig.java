@@ -16,6 +16,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.sql.DataSource;
 import java.util.Properties;
 
+/**
+ * Configuration class for JPA and database persistence.
+ *
+ * @author Ouharri Outman
+ * @version 1.0
+ */
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "com.marjane.Repositories")
@@ -34,8 +40,6 @@ public class PersistenceJPAConfig {
 
     @Bean
     public DataSource dataSource() {
-        System.out.println(dotenv.get("DB_URL"));
-        System.out.println(dotenv.get("DB_USERNAME"));
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(dotenv.get("JDBC_DRIVER"));
         dataSource.setUrl(dotenv.get("DB_URL"));
@@ -68,5 +72,4 @@ public class PersistenceJPAConfig {
         properties.setProperty("hibernate.hbm2ddl.auto", dotenv.get("HBM2DDL_AUTO"));
         return properties;
     }
-
 }

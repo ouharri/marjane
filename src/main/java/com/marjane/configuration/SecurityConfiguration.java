@@ -14,13 +14,12 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 /**
  * Application security configuration class.
- * Spring Security is enabled via @EnableWebSecurity
+ * Spring Security is enabled via @EnableWebSecurity.
  *
  * @author Ouharri Outman
  * @version 2.0
  * @see JwtAuthenticationFilter
  */
-
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
@@ -29,10 +28,9 @@ public class SecurityConfiguration {
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
     private final AuthenticationProvider authenticationProvider;
 
-
     /**
      * Configuration and build of the Spring Security's {@link SecurityFilterChain}.
-     * This implementation sets stateless session policy to allow JWT-authentication
+     * This implementation sets a stateless session policy to allow JWT-authentication
      * and also adds {@link JwtAuthenticationFilter} into the filter chain to check
      * authentication tokens in the incoming HTTP requests.
      *

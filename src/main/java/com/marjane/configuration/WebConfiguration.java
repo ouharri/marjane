@@ -21,7 +21,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfiguration implements WebMvcConfigurer {
 
     /**
-     * Configuration of origins permissions
+     * Configuration of CORS (Cross-Origin Resource Sharing) permissions.
      *
      * @param registry - CORS registry
      */

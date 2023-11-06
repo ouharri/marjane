@@ -4,7 +4,7 @@ import org.jetbrains.annotations.NotNull;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
- * Class of Dispatcher Servlet configuration.
+ * This class configures the Dispatcher Servlet for the application.
  *
  * @author Ouharri Outman
  * @version 1.0
@@ -16,18 +16,20 @@ public class DispatcherServletConfiguration extends AbstractAnnotationConfigDisp
     }
 
     /**
-     * Application classes with WEB configuration.
+     * Specify application classes with WEB configuration.
      */
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] { WebConfiguration.class };
+        return new Class[]{WebConfiguration.class};
     }
 
     /**
-     * Specify mappings for Dispatcher Servlet
+     * Specify URL patterns for the Dispatcher Servlet.
+     *
+     * @return An array of URL patterns.
      */
     @Override
     protected String @NotNull [] getServletMappings() {
-        return new String[] { "/" };
+        return new String[]{"/"};
     }
 }

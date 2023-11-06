@@ -1,5 +1,6 @@
 package com.marjane.jwt;
 
+import com.marjane.Core.dotenv;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -127,7 +128,7 @@ public class JwtService {
      * @return generated key
      */
     private Key getSigningKey() {
-        byte[] keyBytes = Decoders.BASE64.decode("8dcbb6cce5c8870b3fd57c60d5f280c33e47529ce64966a0ff024df61f8c6dcf");
+        byte[] keyBytes = Decoders.BASE64.decode(dotenv.get("JWT_SECRET"));
         return Keys.hmacShaKeyFor(keyBytes);
     }
 }
