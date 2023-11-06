@@ -5,6 +5,8 @@ target/
 !**/src/test/**/target/
 
 .env
+.env.backup
+.env.production
 *.env
 
 ### STS ###

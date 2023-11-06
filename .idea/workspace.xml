@@ -9,22 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="STRUCTURE DE MERDA">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/Marjane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/Marjane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/AppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/AppContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/AppInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/AppInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/DelegatingFilterProxyRegistrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/DelegatingFilterProxyRegistrar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/DispatcherServletConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/DispatcherServletConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/PersistenceJPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/PersistenceJPAConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/configuration/WebConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/jwt/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/jwt/JwtService.java" afterDir="false" />
-    </list>
+    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="STRUCTURE DE MERDA" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -350,7 +335,7 @@
       <workItem from="1699009282085" duration="14926000" />
       <workItem from="1699089697004" duration="46567000" />
       <workItem from="1699214983248" duration="3979000" />
-      <workItem from="1699272396678" duration="2215000" />
+      <workItem from="1699272396678" duration="2710000" />
     </task>
     <task id="LOCAL-00001" summary="STRUCTURE DE MERDA">
       <option name="closed" value="true" />
@@ -456,7 +441,55 @@
       <option name="project" value="LOCAL" />
       <updated>1699009528873</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="app configuration">
+      <option name="closed" value="true" />
+      <created>1699274921918</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699274921918</updated>
+    </task>
+    <task id="LOCAL-00015" summary="integration of the tomcat server into the core of the application">
+      <option name="closed" value="true" />
+      <created>1699274991069</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699274991069</updated>
+    </task>
+    <task id="LOCAL-00016" summary="the starting point of the entire application">
+      <option name="closed" value="true" />
+      <created>1699275021964</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699275021964</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Docker ci/cd">
+      <option name="closed" value="true" />
+      <created>1699275035873</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699275035873</updated>
+    </task>
+    <task id="LOCAL-00018" summary="environment variable">
+      <option name="closed" value="true" />
+      <created>1699275073454</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699275073454</updated>
+    </task>
+    <task id="LOCAL-00019" summary="STRUCTURE DE MERDA">
+      <option name="closed" value="true" />
+      <created>1699275088914</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1699275088915</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,6 +509,11 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="RELOAD_CONTEXT" value="false" />
+    <MESSAGE value="app configuration" />
+    <MESSAGE value="integration of the tomcat server into the core of the application" />
+    <MESSAGE value="the starting point of the entire application" />
+    <MESSAGE value="Docker ci/cd" />
+    <MESSAGE value="environment variable" />
     <MESSAGE value="STRUCTURE DE MERDA" />
     <option name="LAST_COMMIT_MESSAGE" value="STRUCTURE DE MERDA" />
   </component>
