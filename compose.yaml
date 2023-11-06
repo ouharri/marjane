@@ -2,9 +2,9 @@ services:
   postgres:
     image: 'postgres:latest'
     environment:
-      - 'POSTGRES_DB=marjane'
-      - 'POSTGRES_PASSWORD=Youcode@2023'
-      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_DB=${DB_NAME}'
+      - 'POSTGRES_PASSWORD=${DB_PASSWORD}'
+      - 'POSTGRES_USER=${DB_USERNAME}'
     restart: always
     ports:
       - "5432:5432"
