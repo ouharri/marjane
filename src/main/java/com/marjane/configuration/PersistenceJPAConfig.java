@@ -4,6 +4,8 @@ import com.marjane.Core.dotenv;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
+import org.springframework.data.auditing.DateTimeProvider;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -14,6 +16,8 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
+import java.time.OffsetDateTime;
+import java.util.Optional;
 import java.util.Properties;
 
 /**
@@ -24,6 +28,7 @@ import java.util.Properties;
  */
 @Configuration
 @EnableTransactionManagement
+@EnableJpaAuditing(dateTimeProviderRef = "auditingDateTimeProvider")
 @EnableJpaRepositories(basePackages = "com.marjane.Repositories")
 public class PersistenceJPAConfig {
 
@@ -58,6 +63,11 @@ public class PersistenceJPAConfig {
     @Bean
     public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
         return new PersistenceExceptionTranslationPostProcessor();
+    }
+
+    @Bean(name = "auditingDateTimeProvider")
+    public DateTimeProvider dateTimeProvider() {
+        return () -> Optional.of(OffsetDateTime.now());
     }
 
     Properties additionalProperties() {
