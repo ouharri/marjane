@@ -1,8 +1,8 @@
 package com.marjane.configuration;
 
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
-@Component
+@Configuration
 public class ShutdownHook extends Thread {
     @Override
     public void run() {
