@@ -3,23 +3,25 @@ package com.marjane.configuration;
 import com.marjane.Core.dotenv;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.startup.Tomcat;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Component;
 
+import java.io.Closeable;
 import java.io.File;
 import java.io.IOException;
 
 /**
- * Cette classe gère l'initialisation et l'arrêt du serveur Tomcat pour l'application.
+ * This class manages the initialization and shutdown of the Tomcat server for the application.
  */
 @Slf4j
 @Component
-public class AppInit {
+public class AppInit implements Closeable {
 
     private static final int PORT = getPort();
     final static Tomcat tomcat = new Tomcat();
 
     /**
-     * Démarre le serveur Tomcat avec la configuration spécifiée.
+     * Starts the Tomcat server with the specified configuration.
      */
     public static void start() {
         try {
@@ -31,25 +33,25 @@ public class AppInit {
             tomcat.start();
             tomcat.getServer().await();
         } catch (Exception e) {
-            log.error("Erreur lors du démarrage de Tomcat", e);
+            log.error("Error while starting Tomcat", e);
         }
     }
 
     /**
-     * Arrête le serveur Tomcat en cours d'exécution.
+     * Stops the running Tomcat server.
      */
     public static void stop() {
         try {
             tomcat.stop();
         } catch (Exception e) {
-            log.error("Erreur lors de l'arrêt de Tomcat", e);
+            log.error("Error while stopping Tomcat", e);
         }
     }
 
     /**
-     * Récupère le numéro de port à partir des variables d'environnement ou utilise un port par défaut.
+     * Retrieve the port number from environment variables or use a default port.
      *
-     * @return Le numéro de port du serveur Tomcat.
+     * @return The port number of the Tomcat server.
      */
     private static int getPort() {
         String port = dotenv.get("SERVER_PORT");
@@ -57,18 +59,19 @@ public class AppInit {
             try {
                 return Integer.parseInt(port);
             } catch (NumberFormatException e) {
-                log.error("Format de SERVER_PORT invalide : " + port, e);
+                log.error("Invalid SERVER_PORT format: " + port, e);
             }
         }
         return 8080;
     }
 
     /**
-     * Crée un répertoire temporaire pour Tomcat.
+     * Create a temporary directory for Tomcat.
      *
-     * @return Le chemin absolu du répertoire temporaire.
+     * @return The absolute path of the temporary directory.
      */
-    private static String createTempDir() {
+    @SuppressWarnings("ResultOfMethodCallIgnored")
+    private static @NotNull String createTempDir() {
         try {
             File tempDir = File.createTempFile("tomcat.", "." + PORT);
             tempDir.delete();
@@ -79,5 +82,10 @@ public class AppInit {
             log.error("Unable to create tempDir. java.io.tmpdir is set to " + System.getProperty("java.io.tmpdir"), ex);
             throw new RuntimeException(ex);
         }
+    }
+
+    @Override
+    public void close() {
+        stop();
     }
 }
