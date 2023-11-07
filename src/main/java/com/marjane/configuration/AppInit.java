@@ -31,7 +31,6 @@ public class AppInit implements Closeable {
             tomcat.addWebapp("/", ".");
             tomcat.start();
             tomcat.getServer().await();
-
             Runtime.getRuntime()
                     .addShutdownHook(new ShutdownHook());
         } catch (Exception e) {
