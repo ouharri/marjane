@@ -16,7 +16,6 @@ import java.io.IOException;
 @Slf4j
 @Component
 public class AppInit implements Closeable {
-
     private static final int PORT = getPort();
     final static Tomcat tomcat = new Tomcat();
 
@@ -32,6 +31,9 @@ public class AppInit implements Closeable {
             tomcat.addWebapp("/", ".");
             tomcat.start();
             tomcat.getServer().await();
+
+            Runtime.getRuntime()
+                    .addShutdownHook(new ShutdownHook());
         } catch (Exception e) {
             log.error("Error while starting Tomcat", e);
         }
@@ -41,6 +43,7 @@ public class AppInit implements Closeable {
      * Stops the running Tomcat server.
      */
     public static void stop() {
+        log.info("Stopping Tomcat ...");
         try {
             tomcat.stop();
         } catch (Exception e) {
