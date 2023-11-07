@@ -31,3 +31,44 @@ INFO main org.springframework.web.servlet.DispatcherServlet - Completed initiali
 DEBUG http-nio-8080-exec-2 org.springframework.security.web.FilterChainProxy - Securing POST /api/v2/users/register
 DEBUG http-nio-8080-exec-2 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
 DEBUG http-nio-8080-exec-2 org.springframework.security.web.FilterChainProxy - Secured POST /api/v2/users/register
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+ERROR main com.marjane.configuration.AppInit - Error while starting Tomcat
+java.lang.IllegalArgumentException: The location [C:\Users\OUHARRI\AppData\Local\Temp\tomcat.18375172592200329476.8080] specified for the base directory is not a directory
+	at org.apache.catalina.startup.Tomcat.initBaseDir(Tomcat.java:860)
+	at org.apache.catalina.startup.Tomcat.getServer(Tomcat.java:649)
+	at org.apache.catalina.startup.Tomcat.getService(Tomcat.java:581)
+	at org.apache.catalina.startup.Tomcat.getConnector(Tomcat.java:544)
+	at com.marjane.configuration.AppInit.start(AppInit.java:29)
+	at com.marjane.Marjane.main(Marjane.java:7)
