@@ -1,9 +1,9 @@
 package com.marjane;
 
-import com.marjane.configuration.AppInit;
+import com.marjane.core.Application;
 
 public class Marjane {
     public static void main(String[] args) {
-        AppInit.start();
+        Application.start();
     }
 }

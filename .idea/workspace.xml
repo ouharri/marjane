@@ -9,11 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="STRUCTURE DE MERDA">
+    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="Core of application">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/Marjane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/Marjane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,6 +355,7 @@
       <workItem from="1699293678873" duration="3434000" />
       <workItem from="1699386786004" duration="2319000" />
       <workItem from="1699389285585" duration="173000" />
+      <workItem from="1699472124851" duration="2930000" />
     </task>
     <task id="LOCAL-00001" summary="STRUCTURE DE MERDA">
       <option name="closed" value="true" />
@@ -539,7 +541,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699281348987</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Core of application">
+      <option name="closed" value="true" />
+      <created>1699472428879</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1699472428879</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Core of application">
+      <option name="closed" value="true" />
+      <created>1699473193498</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1699473193498</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,6 +583,7 @@
     <MESSAGE value="Docker ci/cd" />
     <MESSAGE value="environment variable" />
     <MESSAGE value="STRUCTURE DE MERDA" />
-    <option name="LAST_COMMIT_MESSAGE" value="STRUCTURE DE MERDA" />
+    <MESSAGE value="Core of application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Core of application" />
   </component>
 </project>
