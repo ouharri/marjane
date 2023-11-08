@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="STRUCTURE DE MERDA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,7 +352,8 @@
       <workItem from="1699386786004" duration="2319000" />
       <workItem from="1699389285585" duration="173000" />
       <workItem from="1699472124851" duration="3666000" />
-      <workItem from="1699477079825" duration="619000" />
+      <workItem from="1699477079825" duration="827000" />
+      <workItem from="1699485934887" duration="683000" />
     </task>
     <task id="LOCAL-00001" summary="STRUCTURE DE MERDA">
       <option name="closed" value="true" />
@@ -595,7 +595,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699477544655</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="STRUCTURE DE MERDA">
+      <option name="closed" value="true" />
+      <created>1699477727137</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1699477727137</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
