@@ -7,19 +7,19 @@ services:
       - 'POSTGRES_USER=${DB_USERNAME}'
     restart: always
     ports:
-      - "5432:5432"
+      - '${DB_PORT}'
     volumes:
       - postgres-db:/var/lib/postgresql/data
     networks:
-        - marjane
+      - marjane
   app:
     build:
       context: .
       dockerfile: Dockerfile
     env_file:
-      - ./.env
+      - .env
     ports:
-      - '8081:8080'
+      - '8081:${SERVER_PORT}'
     depends_on:
       - postgres
     restart: on-failure
@@ -27,8 +27,8 @@ services:
       - marjane
 networks:
   marjane:
-      name: marjane
-      driver: bridge
+    name: marjane
+    driver: bridge
 volumes:
   postgres-db:
     driver: local
