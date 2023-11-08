@@ -1,6 +1,5 @@
-package com.marjane.configuration;
+package com.marjane.core;
 
-import com.marjane.Core.dotenv;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.startup.Tomcat;
 import org.jetbrains.annotations.NotNull;

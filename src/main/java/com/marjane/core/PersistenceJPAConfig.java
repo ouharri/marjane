@@ -1,6 +1,5 @@
-package com.marjane.configuration;
+package com.marjane.core;
 
-import com.marjane.Core.dotenv;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;

@@ -1,4 +1,4 @@
-package com.marjane.configuration;
+package com.marjane.core;
 
 import org.jetbrains.annotations.NotNull;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;

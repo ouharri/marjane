@@ -72,3 +72,15 @@ java.lang.IllegalArgumentException: The location [C:\Users\OUHARRI\AppData\Local
 	at org.apache.catalina.startup.Tomcat.getConnector(Tomcat.java:544)
 	at com.marjane.configuration.AppInit.start(AppInit.java:29)
 	at com.marjane.Marjane.main(Marjane.java:7)
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
+INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.

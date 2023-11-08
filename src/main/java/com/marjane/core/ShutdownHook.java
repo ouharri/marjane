@@ -1,4 +1,4 @@
-package com.marjane.configuration;
+package com.marjane.core;
 
 import org.springframework.context.annotation.Configuration;
 

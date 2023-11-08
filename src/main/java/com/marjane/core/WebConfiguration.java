@@ -1,4 +1,4 @@
-package com.marjane.configuration;
+package com.marjane.core;
 
 import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.NotNull;

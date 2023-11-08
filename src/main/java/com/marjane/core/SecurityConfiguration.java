@@ -1,4 +1,4 @@
-package com.marjane.configuration;
+package com.marjane.core;
 
 import com.marjane.jwt.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;

@@ -1,4 +1,4 @@
-package com.marjane.Core;
+package com.marjane.core;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import lombok.extern.slf4j.Slf4j;
@@ -14,7 +14,7 @@ public class dotenv {
     }
 
     static {
-        synchronized (com.marjane.Core.dotenv.class) {
+        synchronized (com.marjane.core.dotenv.class) {
             if (dotenv == null) {
                 dotenv = Dotenv.configure()
                         .ignoreIfMalformed()

@@ -1,6 +1,6 @@
 package com.marjane.jwt;
 
-import com.marjane.Core.dotenv;
+import com.marjane.core.dotenv;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
