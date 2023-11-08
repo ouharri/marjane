@@ -14,7 +14,7 @@ import java.io.IOException;
  */
 @Slf4j
 @Component
-public class AppInit implements Closeable {
+public class Application implements Closeable {
     private static final int PORT = getPort();
     final static Tomcat tomcat = new Tomcat();
 
