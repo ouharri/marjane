@@ -9,12 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="Core of application">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="Docker .env">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/Marjane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/Marjane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/core/dotenv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/core/dotenv.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
     <setting file="jar://$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0-sources.jar!/jakarta/persistence/PersistenceContext.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.0.9/spring-beans-6.0.9.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/6.0.9/spring-orm-6.0.9.jar!/org/springframework/orm/jpa/vendor/HibernateJpaVendorAdapter.class" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/.env" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.env" root0="SKIP_INSPECTION" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -105,7 +105,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;DotEnv.SettingsForm&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -145,7 +145,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Marjane">
+  <component name="RunManager" selected="Docker.Compose Deployment">
     <configuration name="Marjane" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.marjane.Marjane" />
       <module name="Marjane" />
@@ -355,7 +355,8 @@
       <workItem from="1699293678873" duration="3434000" />
       <workItem from="1699386786004" duration="2319000" />
       <workItem from="1699389285585" duration="173000" />
-      <workItem from="1699472124851" duration="2930000" />
+      <workItem from="1699472124851" duration="3666000" />
+      <workItem from="1699477079825" duration="304000" />
     </task>
     <task id="LOCAL-00001" summary="STRUCTURE DE MERDA">
       <option name="closed" value="true" />
@@ -557,7 +558,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699473193498</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Core of application">
+      <option name="closed" value="true" />
+      <created>1699476529528</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1699476529528</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Docker .env">
+      <option name="closed" value="true" />
+      <created>1699476733033</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1699476733033</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,6 +601,7 @@
     <MESSAGE value="environment variable" />
     <MESSAGE value="STRUCTURE DE MERDA" />
     <MESSAGE value="Core of application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Core of application" />
+    <MESSAGE value="Docker .env" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker .env" />
   </component>
 </project>
