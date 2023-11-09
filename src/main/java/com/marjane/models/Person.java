@@ -3,12 +3,15 @@ package com.marjane.models;
 
 import com.marjane.Enums.Access;
 
+import com.marjane.Enums.Gender;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.*;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -29,8 +32,8 @@ import java.util.*;
 @Table(name = "Person")
 public class Person implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer userId;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID userId;
 
     private String hashPassword;
 
@@ -44,10 +47,6 @@ public class Person implements UserDetails {
 
     @Convert(converter = Access.AccessConverter.class)
     private Access access;
-
-//    @ToString.Exclude
-//    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
-//    private List<Order> orders = new ArrayList<>();
 
     @Override
     public int hashCode() {
@@ -125,6 +124,10 @@ public class Person implements UserDetails {
 
         @Size(max = 30, message = "Firstname is too long")
         private String lastname;
+
+        @Enumerated(EnumType.STRING)
+        @JdbcTypeCode(SqlTypes.NAMED_ENUM)
+        private Gender gender;
 
         @Override
         public int hashCode() {

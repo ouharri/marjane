@@ -18,9 +18,9 @@ import java.util.Objects;
 @Getter
 @Setter
 @ToString
+@Embeddable
 @NoArgsConstructor
 @AllArgsConstructor
-@Embeddable
 public class Address {
     @Size(max = 30, message = "Region name is too long")
     private String region;
@@ -39,17 +39,6 @@ public class Address {
     @Min(value = 1001, message = "Invalid postal code")
     @Max(value = 99999, message = "Invalid postal code")
     private Integer postalCode;
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(region) * 1000000
-                + Objects.hash(district) * 100000
-                + Objects.hash(city) * 10000
-                + Objects.hash(street) * 1000
-                + Objects.hash(building) * 100
-                + Objects.hash(apartment) * 10
-                + Objects.hash(postalCode);
-    }
 
     @Override
     public boolean equals(Object o) {
