@@ -14,7 +14,8 @@ import lombok.Getter;
 public enum Access {
     USER("U"),
     MANAGER("M"),
-    ADMINISTRATOR("A");
+    ADMINISTRATOR("A"),
+    SUPER_ADMINISTRATOR("S");
 
     private final String code;
 
@@ -26,6 +27,7 @@ public enum Access {
         if (code.equals("U")) return USER;
         if (code.equals("M")) return MANAGER;
         if (code.equals("A")) return ADMINISTRATOR;
+        if (code.equals("S")) return SUPER_ADMINISTRATOR;
 
         throw new IllegalArgumentException();
     }
