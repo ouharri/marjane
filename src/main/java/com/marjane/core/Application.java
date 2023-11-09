@@ -29,10 +29,8 @@ public class Application implements Closeable {
             tomcat.addWebapp("/", ".");
             tomcat.start();
             log.warn("Tomcat server started on port " + PORT);
-            System.out.println("\n\n\t\t -------------> MARJANE \n\n\n");
-
             Runtime.getRuntime().addShutdownHook(new ShutdownHook());
-
+            System.out.println("\n\n\t\t -------------> MARJANE \n\n\n");
             tomcat.getServer().await();
         } catch (Exception e) {
             log.error("Error while starting Tomcat", e);
