@@ -14,6 +14,7 @@ import java.io.IOException;
 public class Application implements Closeable {
     private static final int PORT = getPort();
     private static final Tomcat tomcat = new Tomcat();
+    private volatile static File tempDir = null;
 
     /**
      * Starts the Tomcat server with the specified configuration.
@@ -41,9 +42,13 @@ public class Application implements Closeable {
     /**
      * Stops the running Tomcat server.
      */
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     public static void stop() {
         log.info("Stopping Tomcat ...");
         try {
+            if (tempDir != null) {
+                tempDir.delete();
+            }
             tomcat.getServer().stop();
             tomcat.stop();
         } catch (Exception e) {
@@ -76,7 +81,7 @@ public class Application implements Closeable {
     @SuppressWarnings("ResultOfMethodCallIgnored")
     private static @NotNull String createTempDir() {
         try {
-            File tempDir = File.createTempFile("tomcat.", "." + PORT);
+            tempDir = File.createTempFile("tomcat.", "." + PORT);
             tempDir.delete();
             tempDir.mkdir();
             tempDir.deleteOnExit();
