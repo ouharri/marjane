@@ -3,25 +3,23 @@ package com.marjane.core;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.startup.Tomcat;
 import org.jetbrains.annotations.NotNull;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 import java.io.Closeable;
 import java.io.File;
 import java.io.IOException;
 
-/**
- * This class manages the initialization and shutdown of the Tomcat server for the application.
- */
 @Slf4j
-@Component
+@Configuration
 public class Application implements Closeable {
     private static final int PORT = getPort();
-    final static Tomcat tomcat = new Tomcat();
+    private static final Tomcat tomcat = new Tomcat();
 
     /**
      * Starts the Tomcat server with the specified configuration.
      */
     public static void start() {
+        log.info("Starting Tomcat server...");
         try {
             tomcat.setBaseDir(createTempDir());
             tomcat.setPort(PORT);
@@ -29,9 +27,12 @@ public class Application implements Closeable {
             tomcat.getHost().setAppBase(".");
             tomcat.addWebapp("/", ".");
             tomcat.start();
+            log.warn("Tomcat server started on port " + PORT);
+            System.out.println("\n\n\t\t -------------> MARJANE \n\n\n");
+
+            Runtime.getRuntime().addShutdownHook(new ShutdownHook());
+
             tomcat.getServer().await();
-            Runtime.getRuntime()
-                    .addShutdownHook(new ShutdownHook());
         } catch (Exception e) {
             log.error("Error while starting Tomcat", e);
         }
@@ -43,6 +44,7 @@ public class Application implements Closeable {
     public static void stop() {
         log.info("Stopping Tomcat ...");
         try {
+            tomcat.getServer().stop();
             tomcat.stop();
         } catch (Exception e) {
             log.error("Error while stopping Tomcat", e);
@@ -56,12 +58,12 @@ public class Application implements Closeable {
      */
     private static int getPort() {
         String port = dotenv.get("SERVER_PORT");
-        if (port != null) {
-            try {
+        try {
+            if (port != null) {
                 return Integer.parseInt(port);
-            } catch (NumberFormatException e) {
-                log.error("Invalid SERVER_PORT format: " + port, e);
             }
+        } catch (NumberFormatException e) {
+            log.error("Invalid SERVER_PORT format: " + port, e);
         }
         return 8080;
     }
@@ -88,5 +90,15 @@ public class Application implements Closeable {
     @Override
     public void close() {
         stop();
+    }
+
+    /**
+     * A shutdown hook to ensure that Tomcat is stopped gracefully on application shutdown.
+     */
+    public static class ShutdownHook extends Thread {
+        @Override
+        public void run() {
+            Application.stop();
+        }
     }
 }

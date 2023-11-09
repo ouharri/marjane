@@ -20,7 +20,7 @@ import java.io.IOException;
  * Implementation of security filter that authenticates HTTP request
  * by analyzing provided JWT token in the Authorization HTTP-header
  * using methods provided by {@link JwtService} class and comparing
- * credentials inside the token with taken from database via {@link UserDetailsService}
+ * credentials inside the token with taken from a database via {@link UserDetailsService}
  * implementation.
  *
  * @author Ouharri Outman
@@ -47,14 +47,14 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         SecurityContextHolder.getContext().setAuthentication(null);
 
         String jwt = authorizationHeader.substring(7);
-        String phoneNumber = jwtService.extractPhoneNumber(jwt);
+        String email = jwtService.extractEmail(jwt);
 
         if (
                 !jwtService.isTokenExpired(jwt) &&
-                phoneNumber != null &&
+                        email != null &&
                 SecurityContextHolder.getContext().getAuthentication() == null
         ) {
-            UserDetails userDetails = userDetailsService.loadUserByUsername(phoneNumber);
+            UserDetails userDetails = userDetailsService.loadUserByUsername(email);
 
             if (jwtService.isTokenValid(jwt, userDetails)) {
                 var authenticationToken = new UsernamePasswordAuthenticationToken(

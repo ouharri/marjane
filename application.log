@@ -116,3 +116,211 @@ INFO main com.marjane.core.AppContext - Creating a password encoder bean.
 INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
 INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
 INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO main com.marjane.core.Application - 
+
+		 MARJANE 
+_n
+
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-2 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-2 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-2 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-2 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-2 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-2 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+ERROR Thread-1 com.marjane.core.Application - Error while stopping Tomcat
+org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_destroy]) for component [StandardServer[-1]] in state [STOPPING]
+	at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:430)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:316)
+	at com.marjane.core.Application.stop(Application.java:52)
+	at com.marjane.core.Application.close(Application.java:97)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:221)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1182)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1107)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1027)
+	at org.springframework.web.servlet.FrameworkServlet.destroy(FrameworkServlet.java:871)
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1095)
+	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1364)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5117)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1344)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1333)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1344)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1333)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:491)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:970)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at com.marjane.core.Application.stop(Application.java:50)
+	at com.marjane.core.Application$ShutdownHook.run(Application.java:103)
+ERROR Thread-1 com.marjane.core.Application - Error while stopping Tomcat
+org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_stop]) for component [StandardServer[-1]] in state [DESTROYED]
+	at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:430)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:244)
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:495)
+	at com.marjane.core.Application.stop(Application.java:53)
+	at com.marjane.core.Application$ShutdownHook.run(Application.java:103)
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+ERROR Thread-1 com.marjane.core.Application - Error while stopping Tomcat
+org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_destroy]) for component [StandardServer[-1]] in state [STARTED]
+	at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:430)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:316)
+	at com.marjane.core.Application.stop(Application.java:50)
+	at com.marjane.core.Application$ShutdownHook.run(Application.java:103)
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+ERROR Thread-1 com.marjane.core.Application - Error while stopping Tomcat
+org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_destroy]) for component [StandardServer[-1]] in state [STOPPING]
+	at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:430)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:316)
+	at com.marjane.core.Application.stop(Application.java:53)
+	at com.marjane.core.Application.close(Application.java:97)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:221)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1182)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1107)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1027)
+	at org.springframework.web.servlet.FrameworkServlet.destroy(FrameworkServlet.java:871)
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1095)
+	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1364)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5117)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1344)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1333)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1344)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1333)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:491)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:970)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at com.marjane.core.Application.stop(Application.java:50)
+	at com.marjane.core.Application$ShutdownHook.run(Application.java:103)
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082

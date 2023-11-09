@@ -63,7 +63,7 @@ public class JwtService {
      * @param token token to decompose
      * @return phone number of user or null if there is no subject claim inside provided token
      */
-    public String extractPhoneNumber(String token) {
+    public String extractEmail(String token) {
         return extractClaim(token, Claims::getSubject);
     }
 
@@ -110,7 +110,7 @@ public class JwtService {
      * @return {@code true} if token is valid and {@code false} - otherwise
      */
     public boolean isTokenValid(String token, UserDetails userDetails) {
-        String phoneNumber = extractPhoneNumber(token);
+        String phoneNumber = extractEmail(token);
         return phoneNumber.equals(userDetails.getUsername()) && !isTokenExpired(token);
     }
 
