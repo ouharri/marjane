@@ -68,7 +68,7 @@ public class UserController {
 
         userService.registerUser(userToCreate);
 
-        return new AuthEntity(jwtService.createToken(userToCreate), userToCreate.getUserId(),Access.USER.name());
+        return new AuthEntity(jwtService.createToken(userToCreate), userToCreate.getUserId(), Access.USER.name());
     }
 
     /**
