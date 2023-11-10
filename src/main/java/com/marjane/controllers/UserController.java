@@ -8,7 +8,7 @@ import com.marjane.dto.RegistrationForm;
 import com.marjane.exceptions.ResourceNotCreatedException;
 import com.marjane.exceptions.ResourceNotFoundException;
 import com.marjane.jwt.JwtService;
-import com.marjane.models.Person;
+import com.marjane.models.User;
 import com.marjane.services.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Optional;
 
 /**
- * Web controller that handles requests associated with {@link Person}. <br>
+ * Web controller that handles requests associated with {@link User}. <br>
  *
  * @author Ouharri Outman
  * @version 1.0
@@ -46,11 +46,11 @@ public class UserController {
     private final PasswordEncoder passwordEncoder;
 
     /**
-     * Registers new {@link Person} and generates new JWT authentication token for him. <br><br>
+     * Registers new {@link User} and generates new JWT authentication token for him. <br><br>
      * HTTP method: {@code POST} <br>
      * Endpoint: /users/register <br>
      *
-     * @param registrationForm a data transfer object for registering a {@link Person}
+     * @param registrationForm a data transfer object for registering a {@link User}
      * @param bindingResult    a Hibernate Validator object which keeps all
      *                         validation violations.
      * @return JWT for registered user
@@ -61,7 +61,7 @@ public class UserController {
         if (bindingResult.hasErrors())
             throw new ResourceNotCreatedException(bindingResult);
 
-        Person userToCreate = registrationForm.toModel();
+        User userToCreate = registrationForm.toModel();
 
         userToCreate.setAccess(Access.USER);
         userToCreate.setHashPassword(passwordEncoder.encode(registrationForm.getPassword()));
@@ -86,7 +86,7 @@ public class UserController {
             throw new IllegalArgumentException("Invalid login form");
         }
 
-        Optional<Person> userOptional = userService.getUser(loginForm.getEmail());
+        Optional<User> userOptional = userService.getUser(loginForm.getEmail());
 
         if (userOptional.isEmpty() || !passwordEncoder.matches(loginForm.getPassword(), userOptional.get().getHashPassword())) {
             throw new ResourceNotFoundException("Invalid credentials");
@@ -107,10 +107,26 @@ public class UserController {
             throw new ResourceNotFoundException("Authentication failed");
         }
 
-        Person authenticatedUser = userOptional.get();
+        User authenticatedUser = userOptional.get();
         String jwtToken = jwtService.createToken(authenticatedUser);
 
         return new AuthEntity(jwtToken, authenticatedUser.getUserId(), authenticatedUser.getAccess().name());
+    }
+
+    @PostMapping("/add-admin")
+    public AuthEntity registerAdmin(@Valid @RequestBody RegistrationForm registrationForm,
+                                    BindingResult bindingResult) {
+        if (bindingResult.hasErrors())
+            throw new ResourceNotCreatedException(bindingResult);
+
+        User userToCreate = registrationForm.toModel();
+
+        userToCreate.setAccess(Access.ADMINISTRATOR);
+        userToCreate.setHashPassword(passwordEncoder.encode(registrationForm.getPassword()));
+
+        userService.registerAdmin(userToCreate);
+
+        return new AuthEntity(jwtService.createToken(userToCreate), userToCreate.getUserId(), Access.USER.name());
     }
 
 }
