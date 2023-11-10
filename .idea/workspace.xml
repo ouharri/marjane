@@ -9,10 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="Core of application">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="App">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/models/Person.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +42,7 @@
     <setting file="jar://$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0-sources.jar!/jakarta/persistence/PersistenceContext.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.0.9/spring-beans-6.0.9.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/6.0.9/spring-orm-6.0.9.jar!/org/springframework/orm/jpa/vendor/HibernateJpaVendorAdapter.class" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/.env" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/.env" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -83,36 +84,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;V_FMT&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/proj/marjane&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "V_FMT": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/proj/marjane",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\proj\Marjane\src\main\resources" />
@@ -349,71 +351,9 @@
       <workItem from="1699485934887" duration="17286000" />
       <workItem from="1699619149579" duration="8469000" />
       <workItem from="1699630280089" duration="883000" />
-      <workItem from="1699631198758" duration="1044000" />
-    </task>
-    <task id="LOCAL-00001" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1698821882571</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1698821882571</updated>
-    </task>
-    <task id="LOCAL-00002" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1698839978517</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1698839978517</updated>
-    </task>
-    <task id="LOCAL-00003" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1698851917499</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1698851917499</updated>
-    </task>
-    <task id="LOCAL-00004" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1698861663269</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1698861663269</updated>
-    </task>
-    <task id="LOCAL-00005" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1698862045697</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1698862045697</updated>
-    </task>
-    <task id="LOCAL-00006" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1698942706329</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1698942706329</updated>
-    </task>
-    <task id="LOCAL-00007" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1698942761326</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1698942761326</updated>
-    </task>
-    <task id="LOCAL-00008" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1698966998220</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1698966998220</updated>
+      <workItem from="1699631198758" duration="3107000" />
+      <workItem from="1699639677518" duration="1376000" />
+      <workItem from="1699641102551" duration="340000" />
     </task>
     <task id="LOCAL-00009" summary="STRUCTURE DE MERDA">
       <option name="closed" value="true" />
@@ -727,7 +667,87 @@
       <option name="project" value="LOCAL" />
       <updated>1699631630622</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Handel login and register exceptions">
+      <option name="closed" value="true" />
+      <created>1699638790838</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1699638790838</updated>
+    </task>
+    <task id="LOCAL-00049" summary="api test">
+      <option name="closed" value="true" />
+      <created>1699638813007</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1699638813007</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Core of application">
+      <option name="closed" value="true" />
+      <created>1699638828153</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1699638828153</updated>
+    </task>
+    <task id="LOCAL-00051" summary="application log">
+      <option name="closed" value="true" />
+      <created>1699638844052</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1699638844052</updated>
+    </task>
+    <task id="LOCAL-00052" summary="SUPER ADMIN CAN ADD A NEW ADMIN">
+      <option name="closed" value="true" />
+      <created>1699641284146</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1699641284146</updated>
+    </task>
+    <task id="LOCAL-00053" summary="User Repository">
+      <option name="closed" value="true" />
+      <created>1699641307589</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1699641307590</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Exception">
+      <option name="closed" value="true" />
+      <created>1699641325978</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1699641325978</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Registration Form (dto)">
+      <option name="closed" value="true" />
+      <created>1699641348746</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1699641348747</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Dto for an address Model">
+      <option name="closed" value="true" />
+      <created>1699641408118</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1699641408118</updated>
+    </task>
+    <task id="LOCAL-00057" summary="User Access Enum (Role)">
+      <option name="closed" value="true" />
+      <created>1699641427361</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1699641427361</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -747,9 +767,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="RELOAD_CONTEXT" value="false" />
-    <MESSAGE value="app configuration" />
-    <MESSAGE value="integration of the tomcat server into the core of the application" />
-    <MESSAGE value="the starting point of the entire application" />
     <MESSAGE value="Docker ci/cd" />
     <MESSAGE value="environment variable" />
     <MESSAGE value="Docker .env" />
@@ -764,8 +781,18 @@
     <MESSAGE value="Authentification entity Dto" />
     <MESSAGE value="login form Dto" />
     <MESSAGE value="User entity" />
+    <MESSAGE value="Handel login and register exceptions" />
+    <MESSAGE value="api test" />
     <MESSAGE value="Core of application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Core of application" />
+    <MESSAGE value="application log" />
+    <MESSAGE value="SUPER ADMIN CAN ADD A NEW ADMIN" />
+    <MESSAGE value="User Repository" />
+    <MESSAGE value="Exception" />
+    <MESSAGE value="Registration Form (dto)" />
+    <MESSAGE value="Dto for an address Model" />
+    <MESSAGE value="User Access Enum (Role)" />
+    <MESSAGE value="App" />
+    <option name="LAST_COMMIT_MESSAGE" value="App" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
