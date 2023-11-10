@@ -10,10 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="App">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/Enums/PromotionStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/CategoryProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/Centre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/Promotion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/SubCategoryProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/models/Person.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Dockerfile" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -353,15 +358,7 @@
       <workItem from="1699630280089" duration="883000" />
       <workItem from="1699631198758" duration="3107000" />
       <workItem from="1699639677518" duration="1376000" />
-      <workItem from="1699641102551" duration="340000" />
-    </task>
-    <task id="LOCAL-00009" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1699006841296</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1699006841296</updated>
+      <workItem from="1699641102551" duration="1728000" />
     </task>
     <task id="LOCAL-00010" summary="STRUCTURE DE MERDA">
       <option name="closed" value="true" />
@@ -747,7 +744,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699641427361</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="App">
+      <option name="closed" value="true" />
+      <created>1699641458784</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1699641458784</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
