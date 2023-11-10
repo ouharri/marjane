@@ -77,7 +77,7 @@ public class Person implements UserDetails {
 
     @Override
     public String getUsername() {
-        return personalInfo.phoneNumber;
+        return personalInfo.email;
     }
 
     @Override
