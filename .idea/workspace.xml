@@ -9,16 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="App">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/Enums/PromotionStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/CategoryProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/Centre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/Promotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/SubCategoryProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/User.java" afterDir="false" />
+    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="Promotion Status Enum">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b/storage_v2/_src_/database/marjane.jG8FMg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b/storage_v2/_src_/database/marjane.jG8FMg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/models/Loyalty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/Loyalty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/models/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -358,23 +355,7 @@
       <workItem from="1699630280089" duration="883000" />
       <workItem from="1699631198758" duration="3107000" />
       <workItem from="1699639677518" duration="1376000" />
-      <workItem from="1699641102551" duration="1728000" />
-    </task>
-    <task id="LOCAL-00010" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1699007441604</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1699007441604</updated>
-    </task>
-    <task id="LOCAL-00011" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1699009057181</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1699009057181</updated>
+      <workItem from="1699641102551" duration="2378000" />
     </task>
     <task id="LOCAL-00012" summary="STRUCTURE DE MERDA">
       <option name="closed" value="true" />
@@ -752,7 +733,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699641458784</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Add entity">
+      <option name="closed" value="true" />
+      <created>1699643085160</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1699643085160</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Promotion Status Enum">
+      <option name="closed" value="true" />
+      <created>1699643115825</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1699643115825</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -772,8 +769,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="RELOAD_CONTEXT" value="false" />
-    <MESSAGE value="Docker ci/cd" />
-    <MESSAGE value="environment variable" />
     <MESSAGE value="Docker .env" />
     <MESSAGE value="Environment variables" />
     <MESSAGE value="STRUCTURE DE MERDA" />
@@ -797,7 +792,9 @@
     <MESSAGE value="Dto for an address Model" />
     <MESSAGE value="User Access Enum (Role)" />
     <MESSAGE value="App" />
-    <option name="LAST_COMMIT_MESSAGE" value="App" />
+    <MESSAGE value="Add entity" />
+    <MESSAGE value="Promotion Status Enum" />
+    <option name="LAST_COMMIT_MESSAGE" value="Promotion Status Enum" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

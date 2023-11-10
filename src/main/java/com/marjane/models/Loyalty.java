@@ -15,7 +15,7 @@ public class Loyalty {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID loyaltyId;
 
-    @OneToOne(mappedBy = "loyalty")
+    @OneToOne
     private User user;
 
     //TODO Add loyalty-specific fields

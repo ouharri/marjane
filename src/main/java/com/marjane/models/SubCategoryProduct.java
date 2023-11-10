@@ -1,17 +1,14 @@
 package com.marjane.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @Entity
 @Getter
 @Setter
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class SubCategoryProduct {
@@ -19,5 +16,12 @@ public class SubCategoryProduct {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    //TODO Add sub-category-specific fields
+    //TODO Add other sub-category-specific fields
+
+    @ManyToOne
+    @JoinColumn(name = "category_id", nullable = false)
+    private CategoryProduct category;
+
+    @OneToMany(mappedBy = "subCategory")
+    private List<Product> products;
 }
