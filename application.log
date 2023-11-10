@@ -1,180 +1,3 @@
-INFO main org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interfaces.
-INFO main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceJPAConfig' of type [com.marjane.configuration.PersistenceJPAConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-WARN main org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager - Found explicit default persistence unit with name 'default' in persistence.xml - overriding local default persistence unit settings ('managedTypes', 'packagesToScan' or 'mappingResources')
-INFO main org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-INFO main org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7cf58b08, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@377fccff, org.springframework.security.web.context.SecurityContextHolderFilter@38f66fd0, org.springframework.security.web.header.HeaderWriterFilter@314927b7, org.springframework.web.filter.CorsFilter@4b87959b, org.springframework.security.web.authentication.logout.LogoutFilter@6831045c, com.marjane.jwt.JwtAuthenticationFilter@12407f35, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47445dd6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16f92f07, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4bd89109, org.springframework.security.web.session.SessionManagementFilter@532671f4, org.springframework.security.web.access.ExceptionTranslationFilter@3319792d, org.springframework.security.web.access.intercept.AuthorizationFilter@3b0e19f0]
-INFO main org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4164 ms
-INFO main org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
-INFO main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceJPAConfig' of type [com.marjane.configuration.PersistenceJPAConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-WARN main org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager - Found explicit default persistence unit with name 'default' in persistence.xml - overriding local default persistence unit settings ('managedTypes', 'packagesToScan' or 'mappingResources')
-INFO main org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-INFO main org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@9b65a15, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2fe25800, org.springframework.security.web.context.SecurityContextHolderFilter@69ac6b6a, org.springframework.security.web.header.HeaderWriterFilter@26892f11, org.springframework.web.filter.CorsFilter@367fddc8, org.springframework.security.web.authentication.logout.LogoutFilter@1526a492, com.marjane.jwt.JwtAuthenticationFilter@747beca4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7eae7761, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2950bb2d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ae6e1cc, org.springframework.security.web.session.SessionManagementFilter@24639c85, org.springframework.security.web.access.ExceptionTranslationFilter@2b042010, org.springframework.security.web.access.intercept.AuthorizationFilter@417cf1c2]
-INFO main org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4888 ms
-DEBUG http-nio-8080-exec-1 org.springframework.security.web.FilterChainProxy - Securing POST /api/v2/users/register
-DEBUG http-nio-8080-exec-1 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
-DEBUG http-nio-8080-exec-1 org.springframework.security.web.FilterChainProxy - Secured POST /api/v2/users/register
-INFO main org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO main org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
-INFO main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceJPAConfig' of type [com.marjane.configuration.PersistenceJPAConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-WARN main org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager - Found explicit default persistence unit with name 'default' in persistence.xml - overriding local default persistence unit settings ('managedTypes', 'packagesToScan' or 'mappingResources')
-INFO main org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-INFO main org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34a34d96, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a89f5be, org.springframework.security.web.context.SecurityContextHolderFilter@5911172d, org.springframework.security.web.header.HeaderWriterFilter@3de229fb, org.springframework.web.filter.CorsFilter@2314f7a7, org.springframework.security.web.authentication.logout.LogoutFilter@39d7ee14, com.marjane.jwt.JwtAuthenticationFilter@9470ab3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a793129, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cec6062, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a8b8de, org.springframework.security.web.session.SessionManagementFilter@6f05b4ea, org.springframework.security.web.access.ExceptionTranslationFilter@16f92f07, org.springframework.security.web.access.intercept.AuthorizationFilter@a548a06]
-INFO main org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3724 ms
-DEBUG http-nio-8080-exec-2 org.springframework.security.web.FilterChainProxy - Securing POST /api/v2/users/register
-DEBUG http-nio-8080-exec-2 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
-DEBUG http-nio-8080-exec-2 org.springframework.security.web.FilterChainProxy - Secured POST /api/v2/users/register
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-ERROR main com.marjane.configuration.AppInit - Error while starting Tomcat
-java.lang.IllegalArgumentException: The location [C:\Users\OUHARRI\AppData\Local\Temp\tomcat.18375172592200329476.8080] specified for the base directory is not a directory
-	at org.apache.catalina.startup.Tomcat.initBaseDir(Tomcat.java:860)
-	at org.apache.catalina.startup.Tomcat.getServer(Tomcat.java:649)
-	at org.apache.catalina.startup.Tomcat.getService(Tomcat.java:581)
-	at org.apache.catalina.startup.Tomcat.getConnector(Tomcat.java:544)
-	at com.marjane.configuration.AppInit.start(AppInit.java:29)
-	at com.marjane.Marjane.main(Marjane.java:7)
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.configuration.AppContext - Creating a password encoder bean.
-INFO main com.marjane.configuration.AppContext - Creating an authentication manager bean.
-ERROR main com.marjane.core.Application - Error while starting Tomcat
-java.lang.IllegalArgumentException: The location [C:\Users\OUHARRI\AppData\Local\Temp\tomcat.6106580476235323048.8080] specified for the base directory is not a directory
-	at org.apache.catalina.startup.Tomcat.initBaseDir(Tomcat.java:860)
-	at org.apache.catalina.startup.Tomcat.getServer(Tomcat.java:649)
-	at org.apache.catalina.startup.Tomcat.getService(Tomcat.java:581)
-	at org.apache.catalina.startup.Tomcat.getConnector(Tomcat.java:544)
-	at com.marjane.core.Application.start(Application.java:28)
-	at com.marjane.Marjane.main(Marjane.java:7)
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-WARN main com.marjane.core.Application - Tomcat server started on port 8082
-INFO main com.marjane.core.Application - 
-
-		 MARJANE 
-_n
-
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-WARN main com.marjane.core.Application - Tomcat server started on port 8082
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-WARN main com.marjane.core.Application - Tomcat server started on port 8082
-INFO Thread-2 com.marjane.core.Application - Stopping Tomcat ...
-INFO Thread-2 com.marjane.core.Application - Stopping Tomcat ...
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-WARN main com.marjane.core.Application - Tomcat server started on port 8082
-INFO Thread-2 com.marjane.core.Application - Stopping Tomcat ...
-INFO Thread-2 com.marjane.core.Application - Stopping Tomcat ...
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-WARN main com.marjane.core.Application - Tomcat server started on port 8082
-INFO Thread-2 com.marjane.core.Application - Stopping Tomcat ...
-INFO Thread-2 com.marjane.core.Application - Stopping Tomcat ...
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-WARN main com.marjane.core.Application - Tomcat server started on port 8082
 INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
 INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
 INFO main com.marjane.core.dotenv - Loading environment variables ...
@@ -183,139 +6,89 @@ INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
 INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
 INFO main com.marjane.core.AppContext - Creating a password encoder bean.
 WARN main com.marjane.core.Application - Tomcat server started on port 8082
-INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-WARN main com.marjane.core.Application - Tomcat server started on port 8082
-INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
-INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-WARN main com.marjane.core.Application - Tomcat server started on port 8082
-INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
-INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
-ERROR Thread-1 com.marjane.core.Application - Error while stopping Tomcat
-org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_destroy]) for component [StandardServer[-1]] in state [STOPPING]
-	at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:430)
-	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:316)
-	at com.marjane.core.Application.stop(Application.java:52)
-	at com.marjane.core.Application.close(Application.java:97)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:221)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1189)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1182)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1107)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1076)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1027)
-	at org.springframework.web.servlet.FrameworkServlet.destroy(FrameworkServlet.java:871)
-	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1095)
-	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1364)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5117)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1344)
-	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1333)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1344)
-	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1333)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:491)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:970)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-	at com.marjane.core.Application.stop(Application.java:50)
-	at com.marjane.core.Application$ShutdownHook.run(Application.java:103)
-ERROR Thread-1 com.marjane.core.Application - Error while stopping Tomcat
-org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_stop]) for component [StandardServer[-1]] in state [DESTROYED]
-	at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:430)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:244)
-	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:495)
-	at com.marjane.core.Application.stop(Application.java:53)
-	at com.marjane.core.Application$ShutdownHook.run(Application.java:103)
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-WARN main com.marjane.core.Application - Tomcat server started on port 8082
-INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
-ERROR Thread-1 com.marjane.core.Application - Error while stopping Tomcat
-org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_destroy]) for component [StandardServer[-1]] in state [STARTED]
-	at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:430)
-	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:316)
-	at com.marjane.core.Application.stop(Application.java:50)
-	at com.marjane.core.Application$ShutdownHook.run(Application.java:103)
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-WARN main com.marjane.core.Application - Tomcat server started on port 8082
-INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
-INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
-ERROR Thread-1 com.marjane.core.Application - Error while stopping Tomcat
-org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_destroy]) for component [StandardServer[-1]] in state [STOPPING]
-	at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:430)
-	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:316)
-	at com.marjane.core.Application.stop(Application.java:53)
-	at com.marjane.core.Application.close(Application.java:97)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:221)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1189)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1182)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1107)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1076)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1027)
-	at org.springframework.web.servlet.FrameworkServlet.destroy(FrameworkServlet.java:871)
-	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1095)
-	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1364)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5117)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1344)
-	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1333)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1344)
-	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1333)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:491)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:970)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-	at com.marjane.core.Application.stop(Application.java:50)
-	at com.marjane.core.Application$ShutdownHook.run(Application.java:103)
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
-INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
-INFO main com.marjane.core.AppContext - Creating a password encoder bean.
-WARN main com.marjane.core.Application - Tomcat server started on port 8082
+ERROR http-nio-8082-exec-1 com.marjane.controllers.UserController - Authentication failed for user: Mouharriout@gmail.com
+org.springframework.security.authentication.InternalAuthenticationServiceException: UserDetailsService returned null, which is an interface contract violation
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:105)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.marjane.controllers.UserController.loginUser(UserController.java:171)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.marjane.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:44)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
 INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
 INFO main com.marjane.core.dotenv - Loading environment variables ...
@@ -324,18 +97,89 @@ INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
 INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
 INFO main com.marjane.core.AppContext - Creating a password encoder bean.
 WARN main com.marjane.core.Application - Tomcat server started on port 8082
+ERROR http-nio-8082-exec-1 com.marjane.controllers.UserController - Authentication failed for user: Mouharriout@gmail.com
+org.springframework.security.authentication.ProviderNotFoundException: No AuthenticationProvider found for org.springframework.security.authentication.AnonymousAuthenticationToken
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:234)
+	at com.marjane.controllers.UserController.loginUser(UserController.java:171)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.marjane.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:44)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
 INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
-INFO main com.marjane.core.dotenv - Loading environment variables ...
-INFO main com.marjane.core.Application - Starting Tomcat server...
-ERROR main com.marjane.core.Application - Error while starting Tomcat
-java.lang.IllegalArgumentException: The location [C:\Users\OUHARRI\AppData\Local\Temp\tomcat.3150362424556808229.8082] specified for the base directory is not a directory
-	at org.apache.catalina.startup.Tomcat.initBaseDir(Tomcat.java:860)
-	at org.apache.catalina.startup.Tomcat.getServer(Tomcat.java:649)
-	at org.apache.catalina.startup.Tomcat.getService(Tomcat.java:581)
-	at org.apache.catalina.startup.Tomcat.getConnector(Tomcat.java:544)
-	at com.marjane.core.Application.start(Application.java:26)
-	at com.marjane.Marjane.main(Marjane.java:7)
 INFO main com.marjane.core.dotenv - Loading environment variables ...
 INFO main com.marjane.core.Application - Starting Tomcat server...
 INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
@@ -359,6 +203,66 @@ INFO main com.marjane.core.AppContext - Creating an authentication provider bean
 INFO main com.marjane.core.AppContext - Creating a password encoder bean.
 WARN main com.marjane.core.Application - Tomcat server started on port 8082
 INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
-WARN Thread-1 com.marjane.core.Application - Failed to delete the temporary directory
 INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
-WARN Thread-1 com.marjane.core.Application - Failed to delete the temporary directory
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+WARN main com.marjane.core.Application - Tomcat server started on port 8082

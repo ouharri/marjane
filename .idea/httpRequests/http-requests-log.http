@@ -1,571 +1,864 @@
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 81
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T162936.200.json
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T162230.200.json
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T162142.500.html
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T161512.500.html
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T161246.500.html
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T153811.500.html
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T153710.500.html
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T153336.500.html
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T151313.500.html
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T150322.403.html
+
+###
+
+# @no-redirect
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T150204.200.json
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T150048.405.html
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=027549150456D19D6D86C58C09243121
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T145918.405.html
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Cookie: JSESSIONID=E3DF7E257BDB0D7019471D882CFEFA89
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-10T145502.405.html
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "firstname": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
 }
 
-<> 2023-11-01T132526.200.txt
+<> 2023-11-10T145353.404.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 81
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "firstname": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
 }
 
-<> 2023-11-01T131832.200.txt
+<> 2023-11-10T145325.404.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 81
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "firstname": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
 }
 
-<> 2023-11-01T131804.200.txt
+<> 2023-11-10T141958.403.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 81
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "firstname": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
 }
 
-<> 2023-11-01T131755.200.txt
+<> 2023-11-10T133703.403.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 81
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "firstname": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
 }
 
-<> 2023-11-01T130921.200.txt
+<> 2023-11-10T133455.200.json
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 81
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "firstname": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
 }
 
-<> 2023-11-01T130914.200.txt
+<> 2023-11-10T133332.403.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 81
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "firstname": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
 }
 
-<> 2023-11-01T130827.500.html
+<> 2023-11-10T133126.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
 }
 
-<> 2023-11-01T130000.500.html
+<> 2023-11-10T132836.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 150
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0690102928",
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
 }
 
-<> 2023-11-01T124959.500.html
+<> 2023-11-10T132810.200.json
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 145
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0837198914",
+  "email": "ouharriout@gmail.com",
+  "password": "azertsyui"
 }
 
-<> 2023-11-01T120024.500.html
+<> 2023-11-10T132737.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 142
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0837198914",
+  "email": "ouharri@gmail.com",
+  "password": "azertsyui"
 }
 
-<> 2023-11-01T110430.500.html
+<> 2023-11-10T132711.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "ouhrruutan@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T110254.500.html
+<> 2023-11-10T132652.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 142
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0837198914",
+  "email": "ouharri@gmail.com",
+  "password": "azertsyui"
 }
 
-<> 2023-11-01T110118.500.html
+<> 2023-11-10T010822.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 141
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0837198914",
+  "email": "ouharri@gmail.com",
+  "password": "azertyui"
 }
 
-<> 2023-11-01T105813.500.html
+<> 2023-11-10T010405.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 141
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0837198914",
+  "email": "ouharri@gmail.com",
+  "password": "azertyui"
 }
 
-<> 2023-11-01T105636.500.html
+<> 2023-11-10T010313.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "ouhrruutan@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T105538.500.html
+<> 2023-11-10T005846.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "ouhrruutan@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T105344.500.html
+<> 2023-11-10T005722.200.json
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "ouhrruutan@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T105202.500.html
+<> 2023-11-10T005716.200.json
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "ouhrruutan@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T105025.500.html
+<> 2023-11-10T005517.403.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 72
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "ouharrioutman@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T104233.500.html
+<> 2023-11-10T005411.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "ouhrruutan@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T074604.500.html
+<> 2023-11-10T005235.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "ouhrruutan@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T064634.500.html
+<> 2023-11-10T004715.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 151
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0637198914",
+  "email": "ouharruutan@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T063347.500.html
+<> 2023-11-10T004710.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "ouhrruutan@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T063032.500.html
+<> 2023-11-10T004449.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 69
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "email": "ouhrruutan@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T062757.500.html
+<> 2023-11-10T004257.403.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 150
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0837198914",
+  "email": "ouhrruutan@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T062550.500.html
+<> 2023-11-10T002504.200.json
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 151
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0637198914",
+  "email": "ouharruutan@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T062002.500.html
+<> 2023-11-10T002417.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 152
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0637198914",
+  "email": "ouharruutman@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T060045.500.html
+<> 2023-11-10T002358.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 152
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0637198914",
+  "email": "ouharruutman@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T055859.500.html
+<> 2023-11-10T001511.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 152
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0637198914",
+  "email": "ouharruutman@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T055324.500.html
+<> 2023-11-10T001139.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 152
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0637198914",
+  "email": "ouharruutman@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T054138.500.html
+<> 2023-11-10T000908.200.json
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 155
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "06317198914",
+  "email": "ouharriouutman@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T052601.500.html
+<> 2023-11-10T000840.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
+POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
-Content-Length: 80
+Content-Length: 153
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "username": "admin",
-  "password": "admin",
-  "email": "admin@marjane.com"
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0631198914",
+  "email": "ouharrioutman@gmail.com",
+  "password": "ihzfbeuegurzbv"
 }
 
-<> 2023-11-01T052134.500.html
+<> 2023-11-10T000820.500.html
 
 ###
 
-POST http://localhost:8081/marjane/api/v2/users/register
-Content-Length: 0
+POST http://localhost:8082/api/v2/users/register
+Content-Type: application/json
+Content-Length: 153
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-01T052047.400.html
+{
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0631198914",
+  "email": "ouharrioutman@gmail.com",
+  "password": "ihzfbeuegurzbv"
+}
+
+<> 2023-11-10T000610.500.html
+
+###
+
+POST http://localhost:8082/api/v2/users/register
+Content-Type: application/json
+Content-Length: 153
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0631198914",
+  "email": "ouharrioutman@gmail.com",
+  "password": "ihzfbeuegurzbv"
+}
+
+<> 2023-11-10T000545.500.html
+
+###
+
+POST http://localhost:8082/api/v2/users/register
+Content-Type: application/json
+Content-Length: 153
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstname": "outman",
+  "lastname": "ouharri",
+  "phoneNumber": "0631198914",
+  "email": "ouharrioutman@gmail.com",
+  "password": "ihzfbeuegurzbv"
+}
+
+<> 2023-11-10T000400.500.html
 
 ###
 
