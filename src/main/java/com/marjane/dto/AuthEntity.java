@@ -12,4 +12,5 @@ import java.util.UUID;
 public class AuthEntity {
     private String jwt;
     private UUID userId;
+    private String authority;
 }
