@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="Core of application">
-      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/core/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/core/Application.java" afterDir="false" />
-    </list>
+    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="dto for Authentification Entity" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,36 +79,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;V_FMT&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/proj/marjane&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;DotEnv.SettingsForm&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "V_FMT": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/proj/marjane",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\proj\Marjane\src\main\resources" />
@@ -156,22 +153,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="run (1)" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="run" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="run (2)" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="run" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
-    <configuration name="run" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="run" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
+    <configuration name="generated-requests | #9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="9" requestIdentifier="#9" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Tomcat " type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat " ALTERNATIVE_JRE_ENABLED="false">
@@ -308,18 +293,16 @@
       <item itemvalue="Application.Marjane" />
       <item itemvalue="Docker.Compose Deployment" />
       <item itemvalue="Docker.compose.yaml.postgres: Compose Deployment" />
-      <item itemvalue="Makefile Target.run (2)" />
-      <item itemvalue="Makefile Target.run" />
-      <item itemvalue="Makefile Target.run (1)" />
+      <item itemvalue="HTTP Request.generated-requests | #7" />
+      <item itemvalue="HTTP Request.generated-requests | #9" />
       <item itemvalue="Tomcat Server.Tomcat " />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Marjane" />
+        <item itemvalue="HTTP Request.generated-requests | #9" />
+        <item itemvalue="HTTP Request.generated-requests | #7" />
         <item itemvalue="Docker.compose.yaml.postgres: Compose Deployment" />
-        <item itemvalue="Makefile Target.run" />
-        <item itemvalue="Makefile Target.run (2)" />
-        <item itemvalue="Makefile Target.run (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +337,9 @@
       <workItem from="1699389285585" duration="173000" />
       <workItem from="1699472124851" duration="3666000" />
       <workItem from="1699477079825" duration="827000" />
-      <workItem from="1699485934887" duration="5782000" />
+      <workItem from="1699485934887" duration="17286000" />
+      <workItem from="1699619149579" duration="8469000" />
+      <workItem from="1699630280089" duration="883000" />
     </task>
     <task id="LOCAL-00001" summary="STRUCTURE DE MERDA">
       <option name="closed" value="true" />
@@ -620,7 +605,47 @@
       <option name="project" value="LOCAL" />
       <updated>1699556096171</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Core of application">
+      <option name="closed" value="true" />
+      <created>1699556700368</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1699556700368</updated>
+    </task>
+    <task id="LOCAL-00035" summary="STRUCTURE DE MERDA">
+      <option name="closed" value="true" />
+      <created>1699556729960</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1699556729960</updated>
+    </task>
+    <task id="LOCAL-00036" summary="model (Entity)">
+      <option name="closed" value="true" />
+      <created>1699557956534</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1699557956534</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Access Enum (Role)">
+      <option name="closed" value="true" />
+      <created>1699557980620</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1699557980620</updated>
+    </task>
+    <task id="LOCAL-00038" summary="dto for Authentification Entity">
+      <option name="closed" value="true" />
+      <created>1699558022590</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1699558022590</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,8 +672,15 @@
     <MESSAGE value="environment variable" />
     <MESSAGE value="Docker .env" />
     <MESSAGE value="Environment variables" />
-    <MESSAGE value="STRUCTURE DE MERDA" />
     <MESSAGE value="Core of application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Core of application" />
+    <MESSAGE value="STRUCTURE DE MERDA" />
+    <MESSAGE value="model (Entity)" />
+    <MESSAGE value="Access Enum (Role)" />
+    <MESSAGE value="dto for Authentification Entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="dto for Authentification Entity" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
