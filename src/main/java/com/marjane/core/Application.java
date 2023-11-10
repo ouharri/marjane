@@ -3,15 +3,15 @@ package com.marjane.core;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.startup.Tomcat;
 import org.jetbrains.annotations.NotNull;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 import java.io.Closeable;
 import java.io.File;
 import java.io.IOException;
 
 @Slf4j
-@Configuration
-public class Application implements Closeable {
+@Component
+public final class Application implements Closeable {
     private static final int PORT = getPort();
     private static final Tomcat tomcat = new Tomcat();
     private volatile static File tempDir = null;
@@ -30,7 +30,7 @@ public class Application implements Closeable {
             tomcat.start();
             log.warn("Tomcat server started on port " + PORT);
             Runtime.getRuntime().addShutdownHook(new ShutdownHook());
-            System.out.println("\n\n\t\t -------------> MARJANE \n\n\n");
+            Signature();
             tomcat.getServer().await();
         } catch (Exception e) {
             log.error("Error while starting Tomcat", e);
@@ -88,6 +88,17 @@ public class Application implements Closeable {
             log.error("Unable to create tempDir. java.io.tmpdir is set to " + System.getProperty("java.io.tmpdir"), ex);
             throw new RuntimeException(ex);
         }
+    }
+
+    /**
+     * Print an App and Developer signature to the console.
+     */
+    private static void Signature() {
+        System.out.print("\u001b[2J");
+        System.out.print("\u001b[H");
+        System.out.println("\n\n\t\t -------------> MARJANE");
+        System.out.println("\t\t                  by @ouharri.outman");
+        System.out.println("\t\t                     and @ossalhe.mohamed <-------------\n\n\n");
     }
 
     @Override
