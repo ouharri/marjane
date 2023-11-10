@@ -1,11 +1,11 @@
 package com.marjane.Enums;
 
 import jakarta.persistence.AttributeConverter;
-import com.marjane.models.Person;
+import com.marjane.models.User;
 import lombok.Getter;
 
 /**
- * This enumeration represents existing roles of the {@link Person}.
+ * This enumeration represents existing roles of the {@link User}.
  *
  * @author Ouharri Outman
  * @version 1.0
