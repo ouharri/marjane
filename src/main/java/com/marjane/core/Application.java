@@ -88,7 +88,10 @@ public final class Application implements Closeable {
         tomcat.setBaseDir(createTempDir());
         tomcat.setPort(PORT);
         tomcat.getConnector();
+        tomcat.getConnector().setURIEncoding("UTF-8");
         tomcat.getHost().setAppBase(".");
+        tomcat.addWebapp("/", ".");
+        tomcat.getHost().setAutoDeploy(true);
     }
 
     /**
