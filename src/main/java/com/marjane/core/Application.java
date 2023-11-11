@@ -14,7 +14,7 @@ import java.io.IOException;
 public final class Application implements Closeable {
     private static final int PORT = getPort();
     private static final Tomcat tomcat = new Tomcat();
-    private volatile static File tempDir = null;
+    private static volatile File tempDir = null;
 
     /**
      * Starts the Tomcat server with the specified configuration.
@@ -22,15 +22,11 @@ public final class Application implements Closeable {
     public static void start() {
         log.info("Starting Tomcat server...");
         try {
-            tomcat.setBaseDir(createTempDir());
-            tomcat.setPort(PORT);
-            tomcat.getConnector();
-            tomcat.getHost().setAppBase(".");
-            tomcat.addWebapp("/", ".");
+            configureTomcat();
             tomcat.start();
-            log.warn("Tomcat server started on port " + PORT);
+            log.info("Tomcat server started on port " + PORT);
             Runtime.getRuntime().addShutdownHook(new ShutdownHook());
-            Signature();
+            printSignature();
             tomcat.getServer().await();
         } catch (Exception e) {
             log.error("Error while starting Tomcat", e);
@@ -40,13 +36,10 @@ public final class Application implements Closeable {
     /**
      * Stops the running Tomcat server.
      */
-    @SuppressWarnings("ResultOfMethodCallIgnored")
     public static void stop() {
         log.info("Stopping Tomcat ...");
         try {
-            if (tempDir != null) {
-                tempDir.delete();
-            }
+            cleanupTempDir();
             tomcat.getServer().stop();
             tomcat.stop();
         } catch (Exception e) {
@@ -62,13 +55,11 @@ public final class Application implements Closeable {
     private static int getPort() {
         String port = dotenv.get("SERVER_PORT");
         try {
-            if (port != null) {
-                return Integer.parseInt(port);
-            }
+            return (port != null) ? Integer.parseInt(port) : 8080;
         } catch (NumberFormatException e) {
             log.error("Invalid SERVER_PORT format: " + port, e);
+            return 8080;
         }
-        return 8080;
     }
 
     /**
@@ -85,20 +76,40 @@ public final class Application implements Closeable {
             tempDir.deleteOnExit();
             return tempDir.getAbsolutePath();
         } catch (IOException ex) {
-            log.error("Unable to create tempDir. java.io.tmpdir is set to " + System.getProperty("java.io.tmpdir"), ex);
+            log.error("Unable to create tempDir.", ex);
             throw new RuntimeException(ex);
         }
     }
 
     /**
+     * Configures the Tomcat instance.
+     */
+    private static void configureTomcat() {
+        tomcat.setBaseDir(createTempDir());
+        tomcat.setPort(PORT);
+        tomcat.getConnector();
+        tomcat.getHost().setAppBase(".");
+    }
+
+    /**
      * Print an App and Developer signature to the console.
      */
-    private static void Signature() {
+    private static void printSignature() {
         System.out.print("\u001b[2J");
         System.out.print("\u001b[H");
-        System.out.println("\n\n\t\t -------------> MARJANE");
-        System.out.println("\t\t                  by @ouharri.outman");
-        System.out.println("\t\t                     and @ossalhe.mohamed <-------------\n\n\n");
+        System.out.println("\n\n\t\t\t\t -------------> MARJANE");
+        System.out.println("\t\t\t\t                  by @ouharri.outman");
+        System.out.println("\t\t\t\t                     and @ossalhe.mohamed <-------------\n\n\n");
+    }
+
+    /**
+     * Cleanup temporary directory.
+     */
+    @SuppressWarnings("ResultOfMethodCallIgnored")
+    private static void cleanupTempDir() {
+        if (tempDir != null) {
+            tempDir.delete();
+        }
     }
 
     @Override
