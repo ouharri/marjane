@@ -11,7 +11,14 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.UUID;
 
+/**
+ * Service class for managing operations related to users.
+ * Handles communication between the controller and the repository for User entities.
+ *
+ * @version 1.0
+ */
 @Slf4j
 @Service
 @RequiredArgsConstructor
@@ -19,17 +26,29 @@ public class UserService {
     private final UserRepository repository;
 
     /**
-     * @param user {@link User} that should be registered
+     * Register a new user.
+     *
+     * @param user The user to be registered.
      */
     public void registerUser(User user) {
         addUser(user);
     }
 
+    /**
+     * Get a user by phone number or email.
+     *
+     * @param key The phone number or email of the user.
+     * @return Optional containing the user if found, otherwise empty.
+     */
     public Optional<User> getUser(String key) {
         return repository.findByPersonalInfoPhoneNumberOrPersonalInfoEmail(key, key);
     }
 
-
+    /**
+     * Register a new admin user. Requires SUPER_ADMINISTRATOR authority.
+     *
+     * @param user The admin user to be registered.
+     */
     @PreAuthorize("hasAuthority('SUPER_ADMINISTRATOR')")
     public void registerAdmin(User user) {
         addUser(user);
@@ -54,11 +73,11 @@ public class UserService {
     }
 
     /**
-     * Checks if the phone number or the email of object is already used in existing {@link User} object.
+     * Checks if the phone number or the email of the object is already used in an existing {@link User} object.
      *
-     * @param user an object to check
-     * @return a {@link Map} that contains decision about uniqueness of the phone number
-     * and the email of specified {@link User}
+     * @param user The user object to check.
+     * @return A {@link Map} that contains decisions about the uniqueness of the phone number
+     * and the email of the specified {@link User}.
      */
     private Map<String, String> thisNaturalIdExists(User user) {
         Map<String, String> matches = new HashMap<>();
@@ -80,5 +99,14 @@ public class UserService {
         return matches;
     }
 
-
+    /**
+     * Get a user by ID.
+     *
+     * @param id The ID of the user.
+     * @return The user if found, otherwise throw ResourceNotCreatedException.
+     */
+    public User getById(UUID id) {
+        return repository.findById(id)
+                .orElseThrow(() -> new ResourceNotCreatedException("Could not find this user"));
+    }
 }
