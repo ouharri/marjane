@@ -102,7 +102,7 @@ public final class Application implements Closeable {
         System.out.print("\u001b[H");
         System.out.println("\n\n\t\t\t\t -------------> MARJANE");
         System.out.println("\t\t\t\t                  by @ouharri.outman");
-        System.out.println("\t\t\t\t                     and @ossalhe.mohamed <-------------\n\n\n");
+        System.out.println("\t\t\t\t                     and @ossalhe.mohamed <-------------\n\n\n\n");
     }
 
     /**
