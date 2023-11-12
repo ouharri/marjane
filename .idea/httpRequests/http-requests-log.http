@@ -1,3 +1,37 @@
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-11T173552.404.html
+
+###
+
+POST http://localhost:8082/api/v2/users/login
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "Mouharriout@gmail.com",
+  "password": "azeHDUZrtsyui"
+}
+
+<> 2023-11-11T173542.404.html
+
+###
+
 POST http://localhost:8082/api/v2/users/register
 Content-Type: application/json
 Content-Length: 149
@@ -822,44 +856,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2023-11-10T001139.500.html
-
-###
-
-POST http://localhost:8082/api/v2/users/register
-Content-Type: application/json
-Content-Length: 152
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstname": "outman",
-  "lastname": "ouharri",
-  "phoneNumber": "0637198914",
-  "email": "ouharruutman@gmail.com",
-  "password": "ihzfbeuegurzbv"
-}
-
-<> 2023-11-10T000908.200.json
-
-###
-
-POST http://localhost:8082/api/v2/users/register
-Content-Type: application/json
-Content-Length: 155
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstname": "outman",
-  "lastname": "ouharri",
-  "phoneNumber": "06317198914",
-  "email": "ouharriouutman@gmail.com",
-  "password": "ihzfbeuegurzbv"
-}
-
-<> 2023-11-10T000840.500.html
 
 ###
 

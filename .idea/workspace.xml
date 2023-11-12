@@ -9,11 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="Add entity">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b/storage_v2/_src_/database/marjane.jG8FMg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b/storage_v2/_src_/database/marjane.jG8FMg/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="Tomcat configuration">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/core/MailProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjane/core/cloudinaryProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/marjane/core/AppContextTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/marjane/services/CategoryProductServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/marjane/services/CentreServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/marjane/services/CityServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/marjane/services/ProductServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/marjane/services/PromotionServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/marjane/services/SubCategoryProductServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/marjane/services/UserDetailsServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/marjane/services/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/core/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/core/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/exceptions/ResourceNotCreatedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/exceptions/ResourceNotCreatedException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +39,7 @@
       <list>
         <option value="Dockerfile" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -43,6 +58,16 @@
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.0.9/spring-beans-6.0.9.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/6.0.9/spring-orm-6.0.9.jar!/org/springframework/orm/jpa/vendor/HibernateJpaVendorAdapter.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/.env" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/marjane/core/AppContext.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/marjane/core/Application.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/marjane/core/DelegatingFilterProxyRegistrar.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/marjane/core/DispatcherServletConfiguration.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/marjane/core/MailProvider.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/marjane/core/PersistenceJPAConfig.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/marjane/core/SecurityConfiguration.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/marjane/core/WebConfiguration.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/marjane/core/cloudinaryProvider.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/marjane/core/dotenv.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -96,7 +121,7 @@
     &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/proj/marjane&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/proj/marjane/src/main/java/com/marjane/core&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -105,7 +130,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -117,6 +142,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\proj\marjane\src\main\java\com\marjane\core" />
       <recent name="C:\proj\Marjane\src\main\resources" />
       <recent name="C:\proj\Marjane\src\main\java\com\marjane\libs" />
       <recent name="C:\proj\Marjane\src\main\java\com\marjane" />
@@ -159,14 +185,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
-      <method v="2" />
+    <configuration name="AppContextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Marjane" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.marjane.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.marjane.core" />
+      <option name="MAIN_CLASS_NAME" value="com.marjane.core.AppContextTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests | #8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="8" requestIdentifier="#8" runType="Run single request">
-      <method v="2" />
+    <configuration name="AppContextTest.authenticationManagerBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Marjane" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.marjane.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.marjane.core" />
+      <option name="MAIN_CLASS_NAME" value="com.marjane.core.AppContextTest" />
+      <option name="METHOD_NAME" value="authenticationManagerBean" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests | #9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="9" requestIdentifier="#9" runType="Run single request">
-      <method v="2" />
+    <configuration name="ApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Marjane" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.marjane.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.marjane.core" />
+      <option name="MAIN_CLASS_NAME" value="com.marjane.core.ApplicationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationTest.startAndStop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Marjane" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.marjane.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.marjane.core" />
+      <option name="MAIN_CLASS_NAME" value="com.marjane.core.ApplicationTest" />
+      <option name="METHOD_NAME" value="startAndStop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Tomcat " type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat " ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
@@ -285,35 +364,22 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="compose.yaml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="postgres" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.Marjane" />
       <item itemvalue="Docker.Compose Deployment" />
-      <item itemvalue="Docker.compose.yaml.postgres: Compose Deployment" />
-      <item itemvalue="HTTP Request.generated-requests | #8" />
-      <item itemvalue="HTTP Request.generated-requests | #7" />
-      <item itemvalue="HTTP Request.generated-requests | #9" />
+      <item itemvalue="JUnit.AppContextTest" />
+      <item itemvalue="JUnit.AppContextTest.authenticationManagerBean" />
+      <item itemvalue="JUnit.ApplicationTest" />
+      <item itemvalue="JUnit.ApplicationTest.startAndStop" />
       <item itemvalue="Tomcat Server.Tomcat " />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Marjane" />
-        <item itemvalue="HTTP Request.generated-requests | #8" />
-        <item itemvalue="Docker.compose.yaml.postgres: Compose Deployment" />
-        <item itemvalue="HTTP Request.generated-requests | #9" />
-        <item itemvalue="HTTP Request.generated-requests | #7" />
+        <item itemvalue="JUnit.ApplicationTest.startAndStop" />
+        <item itemvalue="JUnit.ApplicationTest" />
+        <item itemvalue="JUnit.AppContextTest.authenticationManagerBean" />
+        <item itemvalue="JUnit.AppContextTest" />
       </list>
     </recent_temporary>
   </component>
@@ -354,167 +420,11 @@
       <workItem from="1699631198758" duration="3107000" />
       <workItem from="1699639677518" duration="1376000" />
       <workItem from="1699641102551" duration="4081000" />
-      <workItem from="1699657278500" duration="1202000" />
-    </task>
-    <task id="LOCAL-00013" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1699009528873</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1699009528873</updated>
-    </task>
-    <task id="LOCAL-00014" summary="app configuration">
-      <option name="closed" value="true" />
-      <created>1699274921918</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1699274921918</updated>
-    </task>
-    <task id="LOCAL-00015" summary="integration of the tomcat server into the core of the application">
-      <option name="closed" value="true" />
-      <created>1699274991069</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1699274991069</updated>
-    </task>
-    <task id="LOCAL-00016" summary="the starting point of the entire application">
-      <option name="closed" value="true" />
-      <created>1699275021964</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1699275021964</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Docker ci/cd">
-      <option name="closed" value="true" />
-      <created>1699275035873</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1699275035873</updated>
-    </task>
-    <task id="LOCAL-00018" summary="environment variable">
-      <option name="closed" value="true" />
-      <created>1699275073454</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1699275073454</updated>
-    </task>
-    <task id="LOCAL-00019" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1699275088914</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1699275088915</updated>
-    </task>
-    <task id="LOCAL-00020" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1699275262611</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1699275262611</updated>
-    </task>
-    <task id="LOCAL-00021" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1699275344663</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1699275344663</updated>
-    </task>
-    <task id="LOCAL-00022" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1699280778615</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1699280778615</updated>
-    </task>
-    <task id="LOCAL-00023" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1699281348987</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1699281348987</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Core of application">
-      <option name="closed" value="true" />
-      <created>1699472428879</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1699472428879</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Core of application">
-      <option name="closed" value="true" />
-      <created>1699473193498</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1699473193498</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Core of application">
-      <option name="closed" value="true" />
-      <created>1699476529528</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1699476529528</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Docker .env">
-      <option name="closed" value="true" />
-      <created>1699476733033</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1699476733033</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Docker .env">
-      <option name="closed" value="true" />
-      <created>1699477519479</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1699477519479</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Environment variables">
-      <option name="closed" value="true" />
-      <created>1699477531918</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1699477531918</updated>
-    </task>
-    <task id="LOCAL-00030" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1699477544655</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1699477544655</updated>
-    </task>
-    <task id="LOCAL-00031" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1699477727137</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1699477727137</updated>
-    </task>
-    <task id="LOCAL-00032" summary="STRUCTURE DE MERDA">
-      <option name="closed" value="true" />
-      <created>1699486775184</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1699486775184</updated>
+      <workItem from="1699657278500" duration="6478000" />
+      <workItem from="1699664030523" duration="375000" />
+      <workItem from="1699664484419" duration="417000" />
+      <workItem from="1699710375283" duration="11932000" />
+      <workItem from="1699750913775" duration="73000" />
     </task>
     <task id="LOCAL-00033" summary="Core of application">
       <option name="closed" value="true" />
@@ -748,7 +658,167 @@
       <option name="project" value="LOCAL" />
       <updated>1699643563814</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Ping Controller to handle requests related to token validation, user roles, and authority checks.">
+      <option name="closed" value="true" />
+      <created>1699659915129</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1699659915130</updated>
+    </task>
+    <task id="LOCAL-00063" summary="entity Repositories (DAO)">
+      <option name="closed" value="true" />
+      <created>1699663073794</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663073795</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Service class for managing Product entities.">
+      <option name="closed" value="true" />
+      <created>1699663178654</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663178654</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Service class for managing operations related to cities.">
+      <option name="closed" value="true" />
+      <created>1699663275641</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663275641</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Service class for managing CategoryProduct entities.">
+      <option name="closed" value="true" />
+      <created>1699663327489</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663327490</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Controller class for handling HTTP requests related to sub-categories of products.">
+      <option name="closed" value="true" />
+      <created>1699663343313</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663343313</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Controller class to handle HTTP requests related to promotions.">
+      <option name="closed" value="true" />
+      <created>1699663357949</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663357949</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Controller class for managing Product entities.">
+      <option name="closed" value="true" />
+      <created>1699663384430</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663384430</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Service class for managing operations related to promotions.">
+      <option name="closed" value="true" />
+      <created>1699663437747</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663437748</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Service class for managing operations related to sub-categories of products.">
+      <option name="closed" value="true" />
+      <created>1699663456530</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663456530</updated>
+    </task>
+    <task id="LOCAL-00072" summary="entity Repositories (DAO)">
+      <option name="closed" value="true" />
+      <created>1699663503346</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663503346</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Promotion Entity">
+      <option name="closed" value="true" />
+      <created>1699663518846</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663518846</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Service class for managing operations related to cities.">
+      <option name="closed" value="true" />
+      <created>1699663537901</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663537902</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Service class for managing operations related to users.">
+      <option name="closed" value="true" />
+      <created>1699663592590</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663592590</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Controller for managing CategoryProduct entities.">
+      <option name="closed" value="true" />
+      <created>1699663637804</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663637804</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Controller class for managing Centre entities.">
+      <option name="closed" value="true" />
+      <created>1699663649740</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663649740</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Controller for managing City entities.">
+      <option name="closed" value="true" />
+      <created>1699663663754</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663663754</updated>
+    </task>
+    <task id="LOCAL-00079" summary="App">
+      <option name="closed" value="true" />
+      <created>1699663686119</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1699663686119</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Tomcat configuration">
+      <option name="closed" value="true" />
+      <created>1699715777452</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1699715777453</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Tomcat configuration">
+      <option name="closed" value="true" />
+      <created>1699721639315</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1699721639315</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -768,32 +838,32 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="RELOAD_CONTEXT" value="false" />
-    <MESSAGE value="Docker .env" />
-    <MESSAGE value="Environment variables" />
-    <MESSAGE value="STRUCTURE DE MERDA" />
-    <MESSAGE value="model (Entity)" />
-    <MESSAGE value="Access Enum (Role)" />
-    <MESSAGE value="dto for Authentification Entity" />
-    <MESSAGE value="user authentification" />
-    <MESSAGE value="Add app signature" />
-    <MESSAGE value="Core of app (configuration)" />
-    <MESSAGE value="Authentification entity Dto" />
-    <MESSAGE value="login form Dto" />
-    <MESSAGE value="User entity" />
-    <MESSAGE value="Handel login and register exceptions" />
-    <MESSAGE value="api test" />
-    <MESSAGE value="Core of application" />
-    <MESSAGE value="application log" />
     <MESSAGE value="SUPER ADMIN CAN ADD A NEW ADMIN" />
     <MESSAGE value="User Repository" />
     <MESSAGE value="Exception" />
     <MESSAGE value="Registration Form (dto)" />
     <MESSAGE value="Dto for an address Model" />
     <MESSAGE value="User Access Enum (Role)" />
-    <MESSAGE value="App" />
     <MESSAGE value="Promotion Status Enum" />
     <MESSAGE value="Add entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add entity" />
+    <MESSAGE value="Ping Controller to handle requests related to token validation, user roles, and authority checks." />
+    <MESSAGE value="Service class for managing Product entities." />
+    <MESSAGE value="Service class for managing CategoryProduct entities." />
+    <MESSAGE value="Controller class for handling HTTP requests related to sub-categories of products." />
+    <MESSAGE value="Controller class to handle HTTP requests related to promotions." />
+    <MESSAGE value="Controller class for managing Product entities." />
+    <MESSAGE value="Service class for managing operations related to promotions." />
+    <MESSAGE value="Service class for managing operations related to sub-categories of products." />
+    <MESSAGE value="entity Repositories (DAO)" />
+    <MESSAGE value="Promotion Entity" />
+    <MESSAGE value="Service class for managing operations related to cities." />
+    <MESSAGE value="Service class for managing operations related to users." />
+    <MESSAGE value="Controller for managing CategoryProduct entities." />
+    <MESSAGE value="Controller class for managing Centre entities." />
+    <MESSAGE value="Controller for managing City entities." />
+    <MESSAGE value="App" />
+    <MESSAGE value="Tomcat configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tomcat configuration" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
