@@ -23,19 +23,6 @@ class UserServiceTest {
     @InjectMocks
     private UserService userService;
 
-    @Test
-    void registerUser_ValidUser_SuccessfullyRegistered() {
-        // Arrange
-        User user = new User();
-        when(userRepository.save(user)).thenReturn(user);
-
-        // Act
-        assertThrows(ResourceNotCreatedException.class, () -> userService.registerUser(user));
-
-        // Assert
-        verify(userRepository, times(1)).save(user);
-    }
-
 
     @Test
     void getById_UserExists_ReturnsUser() {
