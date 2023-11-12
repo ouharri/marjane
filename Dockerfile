@@ -12,6 +12,6 @@ COPY --from=build /app/target/Marjane.war app.war
 RUN mkdir -p /app && cd /app && jar -xvf /app/app.war
 RUN rm /app/app.war
 
-EXPOSE 8080
+EXPOSE 8082
 
 CMD ["java", "-cp", "/app/WEB-INF/lib/*:/app/WEB-INF/classes", "com.marjane.Marjane"]
