@@ -97,7 +97,7 @@ public final class Application implements Closeable {
     /**
      * Print an App and Developer signature to the console.
      */
-    private static void printSignature() {
+    public static void printSignature() {
         System.out.print("\u001b[2J");
         System.out.print("\u001b[H");
         System.out.println("\n\n\t\t\t\t -------------> MARJANE");
