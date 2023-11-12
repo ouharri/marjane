@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="volume postgres db and get environment variable from .env file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
-    </list>
+    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="app log" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +32,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0-sources.jar!/jakarta/persistence/PersistenceContext.java" root0="SKIP_INSPECTION" />
@@ -401,15 +397,7 @@
       <workItem from="1699750913775" duration="73000" />
       <workItem from="1699751040050" duration="308000" />
       <workItem from="1699788166078" duration="48000" />
-      <workItem from="1699788244851" duration="5569000" />
-    </task>
-    <task id="LOCAL-00046" summary="Core of application">
-      <option name="closed" value="true" />
-      <created>1699631604616</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1699631604616</updated>
+      <workItem from="1699788244851" duration="5954000" />
     </task>
     <task id="LOCAL-00047" summary="Core of application">
       <option name="closed" value="true" />
@@ -795,7 +783,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699794617132</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="app log">
+      <option name="closed" value="true" />
+      <created>1699795036039</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1699795036039</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -815,7 +811,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="RELOAD_CONTEXT" value="false" />
-    <MESSAGE value="Service class for managing CategoryProduct entities." />
     <MESSAGE value="Controller class for handling HTTP requests related to sub-categories of products." />
     <MESSAGE value="Controller class to handle HTTP requests related to promotions." />
     <MESSAGE value="Controller class for managing Product entities." />
@@ -840,7 +835,8 @@
     <MESSAGE value="app init and tomcat configuration" />
     <MESSAGE value="expose image to local port" />
     <MESSAGE value="volume postgres db and get environment variable from .env file" />
-    <option name="LAST_COMMIT_MESSAGE" value="volume postgres db and get environment variable from .env file" />
+    <MESSAGE value="app log" />
+    <option name="LAST_COMMIT_MESSAGE" value="app log" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
