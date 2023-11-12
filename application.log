@@ -514,3 +514,40 @@ INFO main com.marjane.services.CityService - Fetching all cities
 INFO main com.marjane.services.CityService - Deleting city by ID: aed8c8fc-2be5-4a86-a1a0-38d21327ed74
 INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
 INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+INFO main com.marjane.core.cloudinaryProvider - Creating a Cloudinary bean.
+INFO main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO Thread-1 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.Application - Tomcat server started on port 8082
+INFO Thread-0 com.marjane.core.Application - Stopping Tomcat ...
+INFO main com.marjane.core.dotenv - Loading environment variables ...
+INFO main com.marjane.core.Application - Starting Tomcat server...
+INFO main com.marjane.core.AppContext - Creating an authentication manager bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+INFO main com.marjane.core.cloudinaryProvider - Creating a Cloudinary bean.
+INFO main com.marjane.core.Application - Tomcat server started on port 8082
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+INFO main com.marjane.services.CityService - Saving city: com.marjane.models.City@4e26564d
+INFO main com.marjane.services.CityService - Updating city: com.marjane.models.City@6be8ce1b
+INFO main com.marjane.services.CityService - Fetching city by ID: dea39e16-864e-4ed5-bda0-d1a010b27154
+INFO main com.marjane.services.CityService - Fetching all cities
+INFO main com.marjane.services.CityService - Deleting city by ID: 467c4838-c8ce-40c5-98c3-f8136bda7b74
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+INFO main com.marjane.core.AppContext - Creating an authentication provider bean.
+INFO main com.marjane.core.AppContext - Creating a password encoder bean.
+INFO main com.marjane.services.CityService - Saving city: com.marjane.models.City@3516b881
+INFO main com.marjane.services.CityService - Updating city: com.marjane.models.City@141dfcf9
+INFO main com.marjane.services.CityService - Fetching city by ID: a260d52a-7530-478b-930d-38d5e768ee1d
+INFO main com.marjane.services.CityService - Fetching all cities
+INFO main com.marjane.services.CityService - Deleting city by ID: 1f2893f9-de25-435b-9d8d-479d3e4eb59c
