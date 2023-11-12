@@ -43,4 +43,8 @@ public class ResourceNotCreatedException extends ResourceException {
         super();
         this.matches = matches;
     }
+
+    public Map<String, String> getErrorMessages() {
+        return this.matches;
+    }
 }
