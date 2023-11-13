@@ -9,7 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="Service class for managing operations related to promotions. Handles communication between the controller and the repository for Promotion entities.">
+    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="Application">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
     </list>
@@ -99,37 +100,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "V_FMT": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/proj/marjane/src/main/java/com/marjane/core",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;V_FMT&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/proj/marjane/src/main/java/com/marjane/core&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\proj\marjane\src\main\java\com\marjane\core" />
@@ -175,163 +176,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Marjane" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.marjane.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.marjane.core" />
-      <option name="MAIN_CLASS_NAME" value="com.marjane.core.ApplicationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApplicationTest.startAndStop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Marjane" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.marjane.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.marjane.core" />
-      <option name="MAIN_CLASS_NAME" value="com.marjane.core.ApplicationTest" />
-      <option name="METHOD_NAME" value="startAndStop" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Marjane" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.marjane.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.marjane.services" />
-      <option name="MAIN_CLASS_NAME" value="com.marjane.services.UserServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="run" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="run" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
-    <configuration name="Tomcat " type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat " ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
-      <deployment>
-        <artifact name="Marjane:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/marjane" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="2eabd5b0-7fd5-4e24-bf07-abda3ee571fb" />
-        <option name="HTTP_PORT" value="8081" />
-      </server-settings>
-      <log_file checked="false" alias="Tomcat Catalina Log" path="%IDEA_RUN:CATALINA_BASE%/logs/catalina.*" />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="true" />
-        <option name="IS_SUBST" value="true" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-          <ENTRY IS_ENABLED="true" PARSER="env" IS_EXECUTABLE="false" PATH=".env" />
-        </ENTRIES>
-      </extension>
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
-      </extension>
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53336" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Marjane:war" />
-        </option>
-      </method>
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -347,19 +191,10 @@
     <list>
       <item itemvalue="Application.Marjane" />
       <item itemvalue="Docker.Compose Deployment" />
-      <item itemvalue="JUnit.UserServiceTest" />
-      <item itemvalue="JUnit.ApplicationTest" />
-      <item itemvalue="JUnit.ApplicationTest.startAndStop" />
-      <item itemvalue="Makefile Target.run" />
-      <item itemvalue="Tomcat Server.Tomcat " />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Marjane" />
-        <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="Makefile Target.run" />
-        <item itemvalue="JUnit.ApplicationTest.startAndStop" />
-        <item itemvalue="JUnit.ApplicationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -409,15 +244,10 @@
       <workItem from="1699788166078" duration="48000" />
       <workItem from="1699788244851" duration="6049000" />
       <workItem from="1699863276368" duration="129000" />
-      <workItem from="1699863718497" duration="4813000" />
-    </task>
-    <task id="LOCAL-00052" summary="SUPER ADMIN CAN ADD A NEW ADMIN">
-      <option name="closed" value="true" />
-      <created>1699641284146</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1699641284146</updated>
+      <workItem from="1699863718497" duration="5117000" />
+      <workItem from="1699870700465" duration="212000" />
+      <workItem from="1699870941845" duration="20000" />
+      <workItem from="1699870988900" duration="23000" />
     </task>
     <task id="LOCAL-00053" summary="User Repository">
       <option name="closed" value="true" />
@@ -803,7 +633,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699869683891</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Application">
+      <option name="closed" value="true" />
+      <created>1699870606110</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1699870606110</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -823,7 +661,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="RELOAD_CONTEXT" value="false" />
-    <MESSAGE value="Service class for managing operations related to promotions." />
     <MESSAGE value="Service class for managing operations related to sub-categories of products." />
     <MESSAGE value="entity Repositories (DAO)" />
     <MESSAGE value="Promotion Entity" />
@@ -848,7 +685,8 @@
     <MESSAGE value="env variable template" />
     <MESSAGE value="app log" />
     <MESSAGE value="Service class for managing operations related to promotions. Handles communication between the controller and the repository for Promotion entities." />
-    <option name="LAST_COMMIT_MESSAGE" value="Service class for managing operations related to promotions. Handles communication between the controller and the repository for Promotion entities." />
+    <MESSAGE value="Application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Application" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
