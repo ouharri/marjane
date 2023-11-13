@@ -48,7 +48,7 @@ public class PromotionService {
         LocalTime endTime = LocalTime.of(12,0);
         if (currentTime.isAfter(startTime) || currentTime.isBefore(endTime))
             return repository.findAll();
-        return new ArrayList<Promotion>();
+        return new ArrayList<>();
     }
 
     /**
