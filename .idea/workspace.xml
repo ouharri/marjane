@@ -10,11 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="app log">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjane/services/PromotionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjane/services/PromotionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,7 @@
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "promotions",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/YC/IdeaProjects/marjane",
     "node.js.detected.package.eslint": "true",
@@ -403,7 +401,7 @@
       <workItem from="1699788244851" duration="5954000" />
       <workItem from="1699863446133" duration="10000" />
       <workItem from="1699863528358" duration="152000" />
-      <workItem from="1699863761386" duration="2673000" />
+      <workItem from="1699863761386" duration="4015000" />
     </task>
     <task id="LOCAL-00047" summary="Core of application">
       <option name="closed" value="true" />

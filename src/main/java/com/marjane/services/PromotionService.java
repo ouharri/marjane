@@ -7,6 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -41,8 +43,12 @@ public class PromotionService {
      */
     @PreAuthorize("hasAuthority('MANAGER')")
     public List<Promotion> getAllPromotions() {
-
-        return repository.findAll();
+        LocalTime currentTime = LocalTime.now();
+        LocalTime startTime = LocalTime.of(8, 0);
+        LocalTime endTime = LocalTime.of(12,0);
+        if (currentTime.isAfter(startTime) || currentTime.isBefore(endTime))
+            return repository.findAll();
+        return new ArrayList<Promotion>();
     }
 
     /**
