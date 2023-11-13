@@ -4,6 +4,7 @@ import com.marjane.Repositories.PromotionRepository;
 import com.marjane.models.Promotion;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -38,7 +39,9 @@ public class PromotionService {
      *
      * @return A list of all Promotions.
      */
+    @PreAuthorize("hasAuthority('MANAGER')")
     public List<Promotion> getAllPromotions() {
+
         return repository.findAll();
     }
 
