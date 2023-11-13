@@ -1,3 +1,35 @@
+GET http://localhost:8082/api/v2/promotion
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T111430.403.html
+
+###
+
+POST http://localhost:8082/api/v2/promotion
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T111402.400.html
+
+###
+
+POST http://localhost:8082/api/v2/promotion
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Cookie: JSESSIONID=CDC364E24E22C566B389E0FCF447CAA1
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T111350.400.html
+
+###
+
 POST http://localhost:8082/api/v2/users/login
 Content-Type: application/json
 Content-Length: 69
@@ -799,63 +831,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2023-11-10T002417.500.html
-
-###
-
-POST http://localhost:8082/api/v2/users/register
-Content-Type: application/json
-Content-Length: 152
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstname": "outman",
-  "lastname": "ouharri",
-  "phoneNumber": "0637198914",
-  "email": "ouharruutman@gmail.com",
-  "password": "ihzfbeuegurzbv"
-}
-
-<> 2023-11-10T002358.500.html
-
-###
-
-POST http://localhost:8082/api/v2/users/register
-Content-Type: application/json
-Content-Length: 152
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstname": "outman",
-  "lastname": "ouharri",
-  "phoneNumber": "0637198914",
-  "email": "ouharruutman@gmail.com",
-  "password": "ihzfbeuegurzbv"
-}
-
-<> 2023-11-10T001511.500.html
-
-###
-
-POST http://localhost:8082/api/v2/users/register
-Content-Type: application/json
-Content-Length: 152
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstname": "outman",
-  "lastname": "ouharri",
-  "phoneNumber": "0637198914",
-  "email": "ouharruutman@gmail.com",
-  "password": "ihzfbeuegurzbv"
-}
-
-<> 2023-11-10T001139.500.html
 
 ###
 
