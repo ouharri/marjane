@@ -9,10 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="Application">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0b1588ed-960a-44e6-8880-367082fe371b.xml" afterDir="false" />
+    <list default="true" id="e2c25967-1873-47cf-bfe4-b4b602d9e41f" name="Changes" comment="Application log">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,30 +246,8 @@
       <workItem from="1699870700465" duration="212000" />
       <workItem from="1699870941845" duration="20000" />
       <workItem from="1699870988900" duration="23000" />
-    </task>
-    <task id="LOCAL-00053" summary="User Repository">
-      <option name="closed" value="true" />
-      <created>1699641307589</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1699641307590</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Exception">
-      <option name="closed" value="true" />
-      <created>1699641325978</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1699641325978</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Registration Form (dto)">
-      <option name="closed" value="true" />
-      <created>1699641348746</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1699641348747</updated>
+      <workItem from="1699871044640" duration="287000" />
+      <workItem from="1699881018306" duration="593000" />
     </task>
     <task id="LOCAL-00056" summary="Dto for an address Model">
       <option name="closed" value="true" />
@@ -641,7 +617,31 @@
       <option name="project" value="LOCAL" />
       <updated>1699870606110</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Application">
+      <option name="closed" value="true" />
+      <created>1699871192671</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1699871192672</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Application">
+      <option name="closed" value="true" />
+      <created>1699871242474</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1699871242474</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Application log">
+      <option name="closed" value="true" />
+      <created>1699871250292</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1699871250292</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +661,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="RELOAD_CONTEXT" value="false" />
-    <MESSAGE value="Service class for managing operations related to sub-categories of products." />
     <MESSAGE value="entity Repositories (DAO)" />
     <MESSAGE value="Promotion Entity" />
     <MESSAGE value="Service class for managing operations related to cities." />
@@ -686,7 +685,8 @@
     <MESSAGE value="app log" />
     <MESSAGE value="Service class for managing operations related to promotions. Handles communication between the controller and the repository for Promotion entities." />
     <MESSAGE value="Application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Application" />
+    <MESSAGE value="Application log" />
+    <option name="LAST_COMMIT_MESSAGE" value="Application log" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
